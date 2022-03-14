@@ -25,7 +25,7 @@ export default function NavBar() {
                   How to get an appointment
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#">About Us</NavDropdown.Item>
+                <NavDropdown.Item href="/about-us">About Us</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

@@ -8,6 +8,7 @@ import OurServices from "./OurServices/Our-Services";
 import EmotionalHealth from "./EmotionalHealth/EmotionalHlth";
 import PatientEdu from "./PatientEducation/PatientEdu";
 import GetAppointment from "./HowtoGetAppointment/GetAppointment";
+import AboutUs from "./AboutUs/AboutUs";
 
 export default function Main() {
   return (
@@ -20,6 +21,7 @@ export default function Main() {
         <Route path="/emotional-health" element={<EmotionalHealth />} />
         <Route path="/patient-education" element={<PatientEdu />} />
         <Route path="/get-appointment" element={<GetAppointment />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
       <Footer />
     </>
