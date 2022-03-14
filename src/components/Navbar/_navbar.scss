@@ -28,8 +28,15 @@
     background-color: #3eb5c7;
   }
 }
+.loginBtn {
+  margin-left: 10px;
+}
 @media only screen and (max-width: 900px) {
   .appointmentbtn {
     margin-left: 0;
+  }
+  .loginBtn {
+    margin-left: 0;
+    margin-top: 10px;
   }
 }

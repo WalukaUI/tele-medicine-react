@@ -3,14 +3,18 @@ import { Nav, Navbar, Container, NavDropdown, Button } from "react-bootstrap";
 export default function NavBar() {
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar
+        bg="light"
+        expand="lg"
+        style={{ fontSize: "1.3rem", color: "black" }}
+      >
         <Container>
-          <Navbar.Brand href="#home">Home</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
+              <Nav.Link href="#">Home</Nav.Link>
               <Nav.Link href="#">Telemedicine</Nav.Link>
-              <Nav.Link href="#">Our Services</Nav.Link>
+              <Nav.Link href="#">Our-Services</Nav.Link>
               <Nav.Link href="#">Emotional Health</Nav.Link>
               <Nav.Link href="#">Paymnets</Nav.Link>
               <NavDropdown title="Other" id="basic-nav-dropdown">
@@ -25,6 +29,7 @@ export default function NavBar() {
             </Nav>
           </Navbar.Collapse>
           <Button className="appointmentbtn">Book an Appointment</Button>
+          <Button className="btn btn-primary loginBtn">Login</Button>
         </Container>
       </Navbar>
     </>
