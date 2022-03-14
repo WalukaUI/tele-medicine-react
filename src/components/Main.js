@@ -4,6 +4,7 @@ import NavBar from "./Navbar/NavBar";
 import ImageCarousel from "./Carousel/Carousel";
 import TeleMed from "./Telemedicine/TeleMed";
 import Footer from "./Footer/Footer.js";
+import OurServices from "./OurServices/Our-Services";
 
 export default function Main() {
   return (
@@ -11,7 +12,8 @@ export default function Main() {
       <NavBar />
       <Routes>
         <Route path="/" element={<ImageCarousel />} />
-        <Route path="/helow" element={<TeleMed />} />
+        <Route path="/tele-medicine" element={<TeleMed />} />
+        <Route path="/our-services" element={<OurServices />} />
       </Routes>
       <Footer />
     </>
