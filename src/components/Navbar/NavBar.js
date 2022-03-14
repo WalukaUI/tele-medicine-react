@@ -29,8 +29,13 @@ export default function NavBar() {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
-          <Button className="appointmentbtn">Book an Appointment</Button>
-          <Button className="btn btn-primary loginBtn">Login</Button>
+          <Nav.Link href="/book-an-appointment">
+            <Button className="appointmentbtn">Book an Appointment</Button>
+          </Nav.Link>
+
+          <Nav.Link href="/login">
+            <Button className="btn btn-primary loginBtn">Login</Button>
+          </Nav.Link>
         </Container>
       </Navbar>
     </>
