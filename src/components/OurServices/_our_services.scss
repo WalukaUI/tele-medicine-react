@@ -1,6 +1,7 @@
-.ourservices {
+.serviceImage {
+  position: relative;
   background-image: url(../../../public/images/telemed.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   min-height: 100vh;
 }

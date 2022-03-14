@@ -4,7 +4,7 @@ import "./_our_services.scss";
 export default function OurServices() {
   return (
     <div className="ourservices row">
-      <div className="col col-md-6 col-sm-12 col-xs-12"></div>
+      <div className="col col-md-6 col-sm-12 col-xs-12 serviceImage"></div>
       <div className="col col-md-6 col-sm-12 col-xs-12">
         <h5>Our Services What can you get consulted and treated here for ? </h5>
         <ul>

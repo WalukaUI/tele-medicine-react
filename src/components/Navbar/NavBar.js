@@ -15,10 +15,12 @@ export default function NavBar() {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/tele-medicine">Telemedicine</Nav.Link>
               <Nav.Link href="/our-services">Our-Services</Nav.Link>
-              <Nav.Link href="#">Emotional Health</Nav.Link>
+              <Nav.Link href="/emotional-health">Emotional Health</Nav.Link>
               <Nav.Link href="#">Paymnets</Nav.Link>
               <NavDropdown title="Other" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#">Patient Education</NavDropdown.Item>
+                <NavDropdown.Item href="/patient-education">
+                  Patient Education
+                </NavDropdown.Item>
                 <NavDropdown.Item href="#">Emotional Health</NavDropdown.Item>
                 <NavDropdown.Item href="#">
                   How to get an appointment
