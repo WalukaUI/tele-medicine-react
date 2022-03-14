@@ -21,8 +21,7 @@ export default function NavBar() {
                 <NavDropdown.Item href="/patient-education">
                   Patient Education
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#">Emotional Health</NavDropdown.Item>
-                <NavDropdown.Item href="#">
+                <NavDropdown.Item href="/get-appointment">
                   How to get an appointment
                 </NavDropdown.Item>
                 <NavDropdown.Divider />

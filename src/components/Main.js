@@ -7,6 +7,7 @@ import Footer from "./Footer/Footer.js";
 import OurServices from "./OurServices/Our-Services";
 import EmotionalHealth from "./EmotionalHealth/EmotionalHlth";
 import PatientEdu from "./PatientEducation/PatientEdu";
+import GetAppointment from "./HowtoGetAppointment/GetAppointment";
 
 export default function Main() {
   return (
@@ -18,6 +19,7 @@ export default function Main() {
         <Route path="/our-services" element={<OurServices />} />
         <Route path="/emotional-health" element={<EmotionalHealth />} />
         <Route path="/patient-education" element={<PatientEdu />} />
+        <Route path="/get-appointment" element={<GetAppointment />} />
       </Routes>
       <Footer />
     </>
