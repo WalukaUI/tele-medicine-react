@@ -11,6 +11,7 @@ import GetAppointment from "./HowtoGetAppointment/GetAppointment";
 import AboutUs from "./AboutUs/AboutUs";
 import Login from "./Login/Login";
 import BookanAppointment from "./BookanAppointment/BookAppointment";
+import Payments from "./Payments/Payments";
 
 export default function Main() {
   return (
@@ -26,6 +27,7 @@ export default function Main() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/login" element={<Login />} />
         <Route path="/book-an-appointment" element={<BookanAppointment />} />
+        <Route path="/payments" element={<Payments />} />
       </Routes>
       <Footer />
     </>
