@@ -1,23 +1,29 @@
 .footerMainDiv {
-  background-color: #155b7f;
+  background-color: #e3f072;
   height: auto;
   display: flex;
-  color: cornsilk;
+  color: rgb(70, 60, 60);
   line-height: 0.6;
-}
-.footerMainDiv div {
-  padding-left: 50px;
-  padding-top: 40px;
-}
-.footerMainDiv img {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
+  div {
+    padding-left: 50px;
+    padding-top: 40px;
+  }
+  img {
+    padding-bottom: 20px;
+  }
+  a {
+    display: block;
+    line-height: 1.5;
+    text-decoration: none;
+    color: rgb(34, 36, 36);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .footerDiv2 H6 {
-  padding-bottom: 15px;
-  text-decoration: underline;
-}
-.footerDiv3 h6 {
   padding-bottom: 15px;
   text-decoration: underline;
 }
@@ -25,6 +31,8 @@
   text-align: center;
   h6 {
     margin-left: 50px;
+    padding-bottom: 15px;
+    text-decoration: underline;
   }
 }
 .svgDiv {
