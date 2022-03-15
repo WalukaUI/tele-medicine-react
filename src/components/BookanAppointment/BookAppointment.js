@@ -14,7 +14,7 @@ export default function BookanAppointment() {
                 <input
                   type="text"
                   className="form-control"
-                  id="validationCustom01"
+                  name="first_name"
                   placeholder="First Name"
                 />
               </div>
@@ -23,7 +23,7 @@ export default function BookanAppointment() {
                 <input
                   type="text"
                   className="form-control"
-                  id="validationCustom02"
+                  name="last_name"
                   placeholder="Last Name"
                 />
               </div>
@@ -33,7 +33,7 @@ export default function BookanAppointment() {
               <input
                 type="email"
                 className="form-control"
-                id="exampleFormControlInput1"
+                name="email"
                 placeholder="name@example.com"
               />
             </div>
@@ -42,8 +42,7 @@ export default function BookanAppointment() {
                 <label for="inputCity">Phone Number</label>
                 <input
                   type="tel"
-                  id="phone"
-                  name="phone"
+                  name="phone_number"
                   className="form-control"
                   placeholder="123-456-7891"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
@@ -56,7 +55,7 @@ export default function BookanAppointment() {
               <input
                 type="text"
                 className="form-control"
-                id="inputAddress"
+                name="address_line_1"
                 placeholder="1234 Main St"
               />
             </div>
@@ -65,18 +64,18 @@ export default function BookanAppointment() {
               <input
                 type="text"
                 className="form-control"
-                id="inputAddress2"
+                name="address_line_2"
                 placeholder="Apartment, studio, or floor"
               />
             </div>
             <div className="form-row row">
               <div className="form-group col-md-6">
                 <label for="inputCity">City</label>
-                <input type="text" className="form-control" id="inputCity" />
+                <input type="text" className="form-control" name="city" />
               </div>
               <div className="form-group col-md-4">
                 <label for="inputState">State</label>
-                <select id="inputState" className="form-control">
+                <select className="form-control" name="state">
                   <option selected>Choose...</option>
                   <option value="">N/A</option>
                   <option value="AK">Alaska</option>
@@ -135,7 +134,7 @@ export default function BookanAppointment() {
               </div>
               <div className="form-group col-md-2">
                 <label for="inputZip">Zip</label>
-                <input type="text" className="form-control" id="inputZip" />
+                <input type="text" className="form-control" name="zip_code" />
               </div>
             </div>
             <hr />
@@ -145,7 +144,7 @@ export default function BookanAppointment() {
                 <input
                   className="form-check-input"
                   type="radio"
-                  name="exampleRadios"
+                  name="isforanadult"
                   value="yes"
                   checked
                 />
@@ -161,7 +160,7 @@ export default function BookanAppointment() {
                 <input
                   className="form-check-input"
                   type="radio"
-                  name="exampleRadios"
+                  name="isforanadult"
                   value="no"
                 />
                 <label
@@ -178,7 +177,7 @@ export default function BookanAppointment() {
               <div className="form-group col-md-4">
                 <input
                   type="date"
-                  name="phone"
+                  name="date_of_birth"
                   className="form-control"
                   pattern="[0-9]{2}"
                 />
@@ -191,7 +190,11 @@ export default function BookanAppointment() {
                   A little about why you're registering for a telemedicine visit
                   today and some idea of your medical history.
                 </label>
-                <textarea className="form-control" rows="5"></textarea>
+                <textarea
+                  className="form-control"
+                  rows="5"
+                  name="reason_for_visit"
+                ></textarea>
               </div>
             </div>
             <div className="form-row row">
@@ -202,7 +205,11 @@ export default function BookanAppointment() {
                   If you have no allergies, Please write NKDA <br />
                   (No Known Drug Allergies).
                 </small>
-                <textarea className="form-control" rows="3"></textarea>
+                <textarea
+                  className="form-control"
+                  rows="3"
+                  name="allergies"
+                ></textarea>
               </div>
             </div>
             <div className="form-row row">
@@ -212,7 +219,11 @@ export default function BookanAppointment() {
                 <small>
                   Please write all medications you are currently taking.
                 </small>
-                <textarea className="form-control" rows="3"></textarea>
+                <textarea
+                  className="form-control"
+                  rows="3"
+                  name="medications"
+                ></textarea>
               </div>
             </div>
             <div className="form-row row">
@@ -222,7 +233,11 @@ export default function BookanAppointment() {
                 </label>
                 <br />
                 <small>List all chronic conditions.</small>
-                <textarea className="form-control" rows="3"></textarea>
+                <textarea
+                  className="form-control"
+                  rows="3"
+                  name="past_medical_history"
+                ></textarea>
               </div>
             </div>
             <div className="form-row row">
@@ -230,7 +245,11 @@ export default function BookanAppointment() {
                 <label for="exampleFormControlTextarea1">
                   Past Surgical History
                 </label>
-                <textarea className="form-control" rows="2"></textarea>
+                <textarea
+                  className="form-control"
+                  rows="2"
+                  name="past_surgical_history"
+                ></textarea>
               </div>
             </div>
             <hr />
@@ -243,7 +262,7 @@ export default function BookanAppointment() {
               <input
                 type="text"
                 className="form-control"
-                id="inputAddress"
+                name="phamercy_address_line_1"
                 placeholder="1234 Main St"
               />
             </div>
@@ -252,18 +271,22 @@ export default function BookanAppointment() {
               <input
                 type="text"
                 className="form-control"
-                id="inputAddress2"
+                name="phamercy_address_line_2"
                 placeholder="Building Number or floor Number"
               />
             </div>
             <div className="form-row row">
               <div className="form-group col-md-6">
                 <label for="inputCity">City</label>
-                <input type="text" className="form-control" id="inputCity" />
+                <input
+                  type="text"
+                  className="form-control"
+                  name="city_of_phamercy"
+                />
               </div>
               <div className="form-group col-md-4">
                 <label for="inputState">State</label>
-                <select id="inputState" className="form-control">
+                <select name="state_of_phamercy" className="form-control">
                   <option selected>Choose...</option>
                   <option value="">N/A</option>
                   <option value="AK">Alaska</option>
@@ -322,21 +345,24 @@ export default function BookanAppointment() {
               </div>
               <div className="form-group col-md-2">
                 <label for="inputZip">Zip</label>
-                <input type="text" className="form-control" id="inputZip" />
+                <input
+                  type="text"
+                  className="form-control"
+                  name="zipcode_of_phamercy"
+                />
               </div>
             </div>
             <hr />
             <div className="form-group col">
-              <label for="inputZip">
+              <label for="quiz">
                 How would you like to pay for this service?
               </label>
               <div className="form-check col-md-2">
                 <input
                   className="form-check-input"
                   type="radio"
-                  name="exampleRadios"
+                  name="cashapp"
                   value="cashapp"
-                  checked
                 />
                 <label
                   className="form-check-label"
@@ -350,7 +376,7 @@ export default function BookanAppointment() {
                 <input
                   className="form-check-input"
                   type="radio"
-                  name="exampleRadios"
+                  name="zelle"
                   value="zelle"
                 />
                 <label
@@ -367,8 +393,7 @@ export default function BookanAppointment() {
                 <label for="inputCity">Emegency Contact Number</label>
                 <input
                   type="tel"
-                  id="phone"
-                  name="phone"
+                  name="emergency_phone_number"
                   className="form-control"
                   placeholder="123-456-7891"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
@@ -386,7 +411,7 @@ export default function BookanAppointment() {
               <input
                 type="file"
                 className="form-control-file"
-                id="exampleFormControlFile1"
+                name="documents"
               />
             </div>
 
