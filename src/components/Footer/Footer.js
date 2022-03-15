@@ -3,11 +3,6 @@ export default function Footer() {
   return (
     <div className="footerMainDiv">
       <div className="col col-sm-12 col-md-4 footerDiv1">
-        <img
-          src="../hospital logo.png"
-          alt="Logo"
-          style={{ width: "25%", marginLeft: "10px" }}
-        />
         <p>Location</p>
         <p>615, Loies Street</p>
         <p>Saint Louis, Missouri 63341</p>
@@ -16,10 +11,10 @@ export default function Footer() {
       <div className="col col-sm-12 col-md-4 footerDiv2">
         <h6>USEFUL LINKS</h6>
         <a href="/about-us">About us</a>
-        <a>Health Information</a>
+        <a href="/ff">Health Information</a>
         <a href="/book-an-appointment">Book an Appointment</a>
         <a href="/patient-education">Patient Education</a>
-        <a>FAQ</a>
+        <a href="/kk">FAQ</a>
       </div>
       <div className="col col-sm-12 col-md-4 footerDiv3">
         <h6>Follow us on Social Media</h6>

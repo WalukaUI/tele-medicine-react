@@ -1,4 +1,9 @@
 /* Navigation bar */
+body {
+  margin: 0;
+  font-family: "Fredoka", sans-serif !important;
+  background-color: #d0e9e7 !important;
+}
 .navbar {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -40,11 +45,6 @@
     margin-left: 0;
     margin-top: 10px;
   }
-}
-body {
-  margin: 0;
-  font-family: "Fredoka", sans-serif !important;
-  background-color: #d0e9e7 !important;
 }
 body section {
   overflow: hidden;
@@ -88,4 +88,4 @@ body h1 {
 .fadeIn.appear {
   transform: translateX(0);
   opacity: 1;
-}/*# sourceMappingURL=App.css.map */
+} /*# sourceMappingURL=App.css.map */

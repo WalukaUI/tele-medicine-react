@@ -1,8 +1,23 @@
 .loginImage {
-  background-image: url(../../../public/images/free.jpg);
+  padding-top: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  background-image: url(../../../public/images/login.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   min-height: 100vh;
+  h5 {
+    font-weight: 800;
+    font-size: x-large;
+  }
 }
-
-//Photo by <a href="https://unsplash.com/@olianayda?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olia Nayda</a> on <a href="https://unsplash.com/s/photos/health?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+.loginForm {
+  width: 25%;
+}
+.attribute {
+  font-size: 8px;
+}
