@@ -4,9 +4,9 @@ import PaymentCare from "./payment-care.jpg";
 export default function Payments() {
   return (
     <>
-      <div className="payments paymentsImage">
-        <div className="row">
-          <div className="col col-md-6 col-sm-12 col-xs-12 mx-auto">
+      <div className="paymentsImage">
+        <div className="row payments">
+          <div className="col col-md-6 col-sm-12 mx-auto">
             <img src={PaymentCare} alt="care" />
             <p style={{ fontSize: "7px" }}>
               Photo by{" "}
@@ -16,11 +16,13 @@ export default function Payments() {
               from Pexels
             </p>
           </div>
-          <div className="col col-md-6 col-sm-12 col-xs-12 mx-auto">
-            Now you can have our service as low as $30 per session.
+          <div className="col col-md-6 col-sm-12mx-auto">
+            Now you can have our service as low as $25 onwards per session.
             <br />
             <br />
-            <h6>We accept CashApp and Zelle as payment methords.</h6>
+            <h6>
+              We accept CashApp, Zelle and Debit/ credit card payment methords.
+            </h6>
           </div>
         </div>
         <div className="attribute">

@@ -1,16 +1,34 @@
 import "./_emotional.scss";
-
+import EmotionalImg from "./emotional.jpg";
 export default function EmotionalHealth() {
   return (
     <>
-      <div className="emotional row">
-        <div className="col col-md-6 col-sm-12 col-xs-12 emotionalImage"></div>
-        <div className="col col-md-6 col-sm-12 col-xs-12">
-          <h5>
-            When you are sick and don't want to leave home we are here to offer
-            affordable and convenient phone and video consultation to take care
-            of your medical needs !
-          </h5>
+      <div className="emotionalImage">
+        <div className="row emotional">
+          <div className="col col-md-6 col-sm-12 mx-auto">
+            <img src={EmotionalImg} alt="emotional" />
+            <p style={{ fontSize: "7px" }}>
+              Photo by{" "}
+              <a href="https://www.pexels.com/photo/young-man-in-sleepwear-suffering-from-headache-in-morning-3771115/">
+                Andrea Piacquadio
+              </a>{" "}
+              from Pexels
+            </p>
+          </div>
+          <div className="col col-md-6 col-sm-12mx-auto">
+            You are neaver alone, We are here to help you.
+            <br />
+          </div>
+        </div>
+        <div className="attribute">
+          Photo by{" "}
+          <a href="https://unsplash.com/@jdiegoph?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Diego PH
+          </a>{" "}
+          on{" "}
+          <a href="https://unsplash.com/collections/9984703/emotion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Unsplash
+          </a>
         </div>
       </div>
     </>
