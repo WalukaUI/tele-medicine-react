@@ -372,40 +372,13 @@ export default function BookanAppointment() {
               </div>
             </div>
             <hr />
-            <div className="form-group col">
-              <label for="quiz">
-                How would you like to pay for this service?
-              </label>
-              <div className="form-check col-md-2">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="cashapp"
-                  value="cashapp"
-                />
-                <label
-                  className="form-check-label"
-                  for="exampleRadios1"
-                  style={{ marginTop: "0" }}
-                >
-                  CashApp
-                </label>
-              </div>
-              <div className="form-check col-md-2">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="zelle"
-                  value="zelle"
-                />
-                <label
-                  className="form-check-label"
-                  for="exampleRadios2"
-                  style={{ marginTop: "0" }}
-                >
-                  Zelle
-                </label>
-              </div>
+            <label>How would you like to pay for this service?</label>
+            <div className="form-group col-md-5">
+              <select name="payment_methord" className="form-control">
+                <option selected>Choose...</option>
+                <option value="cashapp">CashApp</option>
+                <option value="zelle">Zelle</option>
+              </select>
             </div>
             <div className="form-row row">
               <div className="form-group col-md-5">
@@ -423,9 +396,7 @@ export default function BookanAppointment() {
             <hr />
 
             <div class="form-group row fileUploadSection">
-              <label for="exampleFormControlFile1">
-                Upload documents related to the visit.
-              </label>
+              <label for="exampleFormControlFile1">Upload documents.</label>
               <small>File types: pdf, jpg</small>
               <input
                 type="file"

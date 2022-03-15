@@ -2,7 +2,7 @@
   background-color: #e3f072;
   height: auto;
   display: flex;
-  color: rgb(70, 60, 60);
+  color: rgb(34, 36, 36);
   line-height: 0.6;
   padding-bottom: 50px;
   div {
@@ -21,12 +21,12 @@
       text-decoration: underline;
     }
   }
+  H6 {
+    padding-bottom: 15px;
+    text-decoration: underline;
+  }
 }
 
-.footerDiv2 H6 {
-  padding-bottom: 15px;
-  text-decoration: underline;
-}
 .footerDiv3 {
   text-align: center;
   h6 {

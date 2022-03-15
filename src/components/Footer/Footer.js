@@ -3,7 +3,7 @@ export default function Footer() {
   return (
     <div className="footerMainDiv">
       <div className="col col-sm-12 col-md-4 footerDiv1">
-        <p>Location</p>
+        <h6>LOCATION</h6>
         <p>615, Loies Street</p>
         <p>Saint Louis, Missouri 63341</p>
         <p>314-251-5000</p>

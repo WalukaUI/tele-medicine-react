@@ -1,11 +1,11 @@
-.loginImage {
+.singnupImage {
   padding-top: 0;
   position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-items: center;
-  background-image: url(../../../public/images/appointment.jpg);
+  background-image: url(../../../public/images/signup.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
@@ -15,9 +15,9 @@
     font-size: x-large;
   }
 }
-.loginForm {
+.signupForm {
   margin-top: 2rem;
-  width: 25%;
+  width: 30%;
 }
 .attribute {
   right: 0;
