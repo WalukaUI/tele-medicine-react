@@ -1,8 +1,24 @@
-.bootAppointImage {
-  background-image: url(../../../public/images/telemed.jpg);
+.bookAppoint {
+  // background-image: url(../../../public/images/appointment.jpg);
+  background-color: #8ccbbe;
+  padding-top: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   min-height: 100vh;
+  h5 {
+    margin-top: 1rem;
+    font-weight: 800;
+    font-size: x-large;
+  }
+  label {
+    margin-top: 2rem;
+  }
 }
-
-//Photo by <a href="https://unsplash.com/@olianayda?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olia Nayda</a> on <a href="https://unsplash.com/s/photos/health?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+.formContainer {
+  width: 50%;
+}

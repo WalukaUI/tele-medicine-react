@@ -5,19 +5,23 @@
   flex-direction: column;
   text-align: center;
   justify-items: center;
-  justify-content: space-evenly;
   background-image: url(../../../public/images/login.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   h5 {
+    margin-top: 1rem;
     font-weight: 800;
     font-size: x-large;
   }
 }
 .loginForm {
+  margin-top: 5rem;
   width: 25%;
 }
 .attribute {
-  font-size: 8px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  font-size: 10px;
 }
