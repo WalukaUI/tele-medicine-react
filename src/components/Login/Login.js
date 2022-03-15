@@ -1,10 +1,16 @@
 import "./_login.scss";
-import { Form, Button } from "react-bootstrap";
+import { Nav, Form, Button } from "react-bootstrap";
 
 export default function Login() {
   return (
     <>
       <div className="loginImage col">
+        <div>
+          <h5>Don't have an Account</h5>
+          <Nav.Link href="/signup">
+            <Button className="signupBtn btn btn-success">Sign Up</Button>
+          </Nav.Link>
+        </div>
         <h5>Login</h5>
         <p>Please Login to Update your appointments or profile details</p>
         <div className="formContainer">
