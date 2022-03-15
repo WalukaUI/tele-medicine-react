@@ -16,6 +16,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   name="first_name"
                   placeholder="First Name"
+                  required
                 />
               </div>
               <div className="form-group col-md-6">
@@ -25,6 +26,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   name="last_name"
                   placeholder="Last Name"
+                  required
                 />
               </div>
             </div>
@@ -35,6 +37,7 @@ export default function BookanAppointment() {
                 className="form-control"
                 name="email"
                 placeholder="name@example.com"
+                required
               />
             </div>
             <div className="form-row row">
@@ -46,6 +49,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   placeholder="123-456-7891"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                  required
                 />
                 <small style={{ color: "green" }}>Format: 123-456-7891</small>
               </div>
@@ -57,6 +61,7 @@ export default function BookanAppointment() {
                 className="form-control"
                 name="address_line_1"
                 placeholder="1234 Main St"
+                required
               />
             </div>
             <div className="form-group">
@@ -71,11 +76,16 @@ export default function BookanAppointment() {
             <div className="form-row row">
               <div className="form-group col-md-6">
                 <label for="inputCity">City</label>
-                <input type="text" className="form-control" name="city" />
+                <input
+                  type="text"
+                  className="form-control"
+                  name="city"
+                  required
+                />
               </div>
               <div className="form-group col-md-4">
                 <label for="inputState">State</label>
-                <select className="form-control" name="state">
+                <select className="form-control" name="state" required>
                   <option selected>Choose...</option>
                   <option value="">N/A</option>
                   <option value="AK">Alaska</option>
@@ -134,7 +144,12 @@ export default function BookanAppointment() {
               </div>
               <div className="form-group col-md-2">
                 <label for="inputZip">Zip</label>
-                <input type="text" className="form-control" name="zip_code" />
+                <input
+                  type="text"
+                  className="form-control"
+                  name="zip_code"
+                  required
+                />
               </div>
             </div>
             <hr />
@@ -146,7 +161,6 @@ export default function BookanAppointment() {
                   type="radio"
                   name="isforanadult"
                   value="yes"
-                  checked
                 />
                 <label
                   className="form-check-label"
@@ -180,8 +194,11 @@ export default function BookanAppointment() {
                   name="date_of_birth"
                   className="form-control"
                   pattern="[0-9]{2}"
+                  required
                 />
-                <small style={{ color: "green" }}>MM/DD/YYYY</small>
+                <small style={{ color: "green" }}>
+                  Format: Month/Date/Year
+                </small>
               </div>
             </div>
             <div className="form-row row">
@@ -194,6 +211,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   rows="5"
                   name="reason_for_visit"
+                  required
                 ></textarea>
               </div>
             </div>
@@ -209,6 +227,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   rows="3"
                   name="allergies"
+                  required
                 ></textarea>
               </div>
             </div>
