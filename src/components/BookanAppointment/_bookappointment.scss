@@ -2,6 +2,7 @@
   // background-image: url(../../../public/images/appointment.jpg);
   background-color: #8ccbbe;
   padding-top: 0;
+  padding-bottom: 50px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -18,7 +19,14 @@
   label {
     margin-top: 2rem;
   }
+  small {
+    color: rgb(83, 81, 81);
+  }
 }
-.formContainer {
+.appointmentformContainer {
   width: 50%;
+}
+.fileUploadSection {
+  background-color: rgb(199, 209, 209);
+  padding: 20px;
 }

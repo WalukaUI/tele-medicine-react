@@ -5,8 +5,8 @@ export default function BookanAppointment() {
     <>
       <div className="bookAppoint col">
         <h5>Create a New Appointment</h5>
-        <p>Please fill out the form to make a new appointment</p>
-        <div className="formContainer mx-auto">
+        <p>Please fill out the form to make a new appointment.</p>
+        <div className="appointmentformContainer mx-auto">
           <form style={{ textAlign: "left" }}>
             <div className="form-row row">
               <div className="form-group col-md-6">
@@ -78,8 +78,59 @@ export default function BookanAppointment() {
                 <label for="inputState">State</label>
                 <select id="inputState" className="form-control">
                   <option selected>Choose...</option>
-                  <option>USA</option>
-                  <option>Canada</option>
+                  <option value="">N/A</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DC">District of Columbia</option>
+                  <option value="DE">Delaware</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="IA">Iowa</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MD">Maryland</option>
+                  <option value="ME">Maine</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MT">Montana</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NY">New York</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="PR">Puerto Rico</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VA">Virginia</option>
+                  <option value="VT">Vermont</option>
+                  <option value="WA">Washington</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WY">Wyoming</option>
                 </select>
               </div>
               <div className="form-group col-md-2">
@@ -89,14 +140,13 @@ export default function BookanAppointment() {
             </div>
             <hr />
             <div className="form-group col">
-              <label for="inputZip">Is this session for an Adult</label>
+              <label for="inputZip">Is this session for an Adult?</label>
               <div className="form-check col-md-2">
                 <input
                   className="form-check-input"
                   type="radio"
                   name="exampleRadios"
-                  id="exampleRadios1"
-                  value="option1"
+                  value="yes"
                   checked
                 />
                 <label
@@ -112,8 +162,7 @@ export default function BookanAppointment() {
                   className="form-check-input"
                   type="radio"
                   name="exampleRadios"
-                  id="exampleRadios2"
-                  value="option2"
+                  value="no"
                 />
                 <label
                   className="form-check-label"
@@ -124,9 +173,226 @@ export default function BookanAppointment() {
                 </label>
               </div>
             </div>
+            <div className="form-row row">
+              <label for="inputCity">Date Of Birth</label>
+              <div className="form-group col-md-4">
+                <input
+                  type="date"
+                  name="phone"
+                  className="form-control"
+                  pattern="[0-9]{2}"
+                />
+                <small style={{ color: "green" }}>MM/DD/YYYY</small>
+              </div>
+            </div>
+            <div className="form-row row">
+              <div className="form-group col-md-12">
+                <label for="exampleFormControlTextarea1">
+                  A little about why you're registering for a telemedicine visit
+                  today and some idea of your medical history.
+                </label>
+                <textarea className="form-control" rows="5"></textarea>
+              </div>
+            </div>
+            <div className="form-row row">
+              <div className="form-group col-md-8">
+                <label for="exampleFormControlTextarea1">Drug Allergies</label>
+                <br />
+                <small>
+                  If you have no allergies, Please write NKDA <br />
+                  (No Known Drug Allergies).
+                </small>
+                <textarea className="form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <div className="form-row row">
+              <div className="form-group col-md-8">
+                <label for="exampleFormControlTextarea1">Medications</label>
+                <br />
+                <small>
+                  Please write all medications you are currently taking.
+                </small>
+                <textarea className="form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <div className="form-row row">
+              <div className="form-group col-md-8">
+                <label for="exampleFormControlTextarea1">
+                  Past Medical History
+                </label>
+                <br />
+                <small>List all chronic conditions.</small>
+                <textarea className="form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <div className="form-row row">
+              <div className="form-group col-md-8">
+                <label for="exampleFormControlTextarea1">
+                  Past Surgical History
+                </label>
+                <textarea className="form-control" rows="2"></textarea>
+              </div>
+            </div>
+            <hr />
+            <div className="form-group">
+              <label for="inputState">Preferred Phamercy:</label>
+              <br />
+              <label for="inputAddress" style={{ marginTop: "0" }}>
+                Address
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="inputAddress"
+                placeholder="1234 Main St"
+              />
+            </div>
+            <div className="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input
+                type="text"
+                className="form-control"
+                id="inputAddress2"
+                placeholder="Building Number or floor Number"
+              />
+            </div>
+            <div className="form-row row">
+              <div className="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" className="form-control" id="inputCity" />
+              </div>
+              <div className="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" className="form-control">
+                  <option selected>Choose...</option>
+                  <option value="">N/A</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DC">District of Columbia</option>
+                  <option value="DE">Delaware</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="IA">Iowa</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MD">Maryland</option>
+                  <option value="ME">Maine</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MT">Montana</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NY">New York</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="PR">Puerto Rico</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VA">Virginia</option>
+                  <option value="VT">Vermont</option>
+                  <option value="WA">Washington</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+              <div className="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" className="form-control" id="inputZip" />
+              </div>
+            </div>
+            <hr />
+            <div className="form-group col">
+              <label for="inputZip">
+                How would you like to pay for this service?
+              </label>
+              <div className="form-check col-md-2">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  value="cashapp"
+                  checked
+                />
+                <label
+                  className="form-check-label"
+                  for="exampleRadios1"
+                  style={{ marginTop: "0" }}
+                >
+                  CashApp
+                </label>
+              </div>
+              <div className="form-check col-md-2">
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  value="zelle"
+                />
+                <label
+                  className="form-check-label"
+                  for="exampleRadios2"
+                  style={{ marginTop: "0" }}
+                >
+                  Zelle
+                </label>
+              </div>
+            </div>
+            <div className="form-row row">
+              <div className="form-group col-md-5">
+                <label for="inputCity">Emegency Contact Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  className="form-control"
+                  placeholder="123-456-7891"
+                  pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                />
+                <small style={{ color: "green" }}>Format: 123-456-7891</small>
+              </div>
+            </div>
+            <hr />
+
+            <div class="form-group row fileUploadSection">
+              <label for="exampleFormControlFile1">
+                Upload documents related to the visit.
+              </label>
+              <small>File types: pdf, jpg</small>
+              <input
+                type="file"
+                className="form-control-file"
+                id="exampleFormControlFile1"
+              />
+            </div>
+
             <hr />
             <button type="submit" className="btn btn-primary">
-              Sign in
+              Submit
             </button>
           </form>
         </div>
