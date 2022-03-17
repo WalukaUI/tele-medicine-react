@@ -11,12 +11,23 @@ export default function TeleMed() {
             <p style={{ fontSize: "7px" }}>Photo by </p>
           </div>
           <div className="col col-md-6 col-sm-12mx-auto">
-            Now you can have our service as low as $25 onwards per session.
-            <br />
-            <br />
             <h6>
-              We accept CashApp, Zelle and Debit/ credit card payment methords.
+              When you are sick and don't want to leave home we are here to
+              offer affordable and convenient phone and video consultation to
+              take care of your medical needs !
             </h6>
+            <h4>What are the benefits of telehealth ?</h4>
+            <ul>
+              <li>Fast access to urgent care needs</li>
+              <li>No driving to a doctor's office or urgent care</li>
+              <li>Easy to fit in to your busy schedule</li>
+              <li>Prescription provided when needed</li>
+              <li>Minimal waiting time spent</li>
+              <li>
+                Receive medical advice and patient education from the comfort of
+                your own bed / sofa
+              </li>
+            </ul>
           </div>
         </div>
         <div className="attribute">
