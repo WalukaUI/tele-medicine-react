@@ -1,8 +1,29 @@
-.teleMed {
-  background-image: url(../../../public/images/free.jpg);
+.telemedImage {
+  padding-top: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  background-image: url(../../../public/images/telmed.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 100vh;
+  background-size: cover;
+  padding: 50px;
+  img {
+    width: 70%;
+    height: 80%;
+  }
+}
+.attribute {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  font-size: 0.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .telemed {
+    flex-direction: column;
+  }
 }
 
 //Photo by <a href="https://unsplash.com/@olianayda?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olia Nayda</a> on <a href="https://unsplash.com/s/photos/health?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
