@@ -8,7 +8,16 @@ export default function TeleMed() {
         <div className="row telemed">
           <div className="col col-md-6 col-sm-12 mx-auto">
             <img src={Telemed} alt="telemedicine" />
-            <p style={{ fontSize: "7px" }}>Photo by </p>
+            <p style={{ fontSize: "7px" }}>
+              Photo by{" "}
+              <a href="https://unsplash.com/@hush52?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                Hush Naidoo Jade Photography
+              </a>{" "}
+              on{" "}
+              <a href="https://unsplash.com/s/photos/tele-medicine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                Unsplash
+              </a>
+            </p>
           </div>
           <div className="col col-md-6 col-sm-12mx-auto">
             <h6>

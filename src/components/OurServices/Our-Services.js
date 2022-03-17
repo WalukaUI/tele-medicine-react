@@ -1,6 +1,6 @@
 import React from "react";
 import "./_our_services.scss";
-import TeleMedservices from "./telemed.jpg";
+import TeleMedservices from "./services.jpg";
 
 export default function OurServices() {
   return (
@@ -8,6 +8,16 @@ export default function OurServices() {
       <div className="row ourserviceImage">
         <div className="col col-md-6 col-sm-12 col-xs-12 serviceImage">
           <img src={TeleMedservices} alt="services" />
+          <p style={{ fontSize: "7px" }}>
+            Photo by{" "}
+            <a href="https://unsplash.com/@rodlong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Rod Long
+            </a>{" "}
+            on{" "}
+            <a href="https://unsplash.com/s/photos/services?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </p>
         </div>
         <div className="col col-md-6 col-sm-12 col-xs-12">
           <h5>
