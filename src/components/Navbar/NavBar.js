@@ -9,7 +9,7 @@ export default function NavBar() {
         style={{ fontSize: "1.3rem", color: "black" }}
       >
         <Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav nav-bkground" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>

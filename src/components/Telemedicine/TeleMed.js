@@ -7,7 +7,7 @@ export default function TeleMed() {
       <div className="telemedImage">
         <div className="row telemed">
           <div className="col col-md-6 col-sm-12 mx-auto">
-            <img src={Telemed} alt="telemedicine" />
+            <img src={Telemed} alt="telemedicine" class="faded faded-all" />
             <p style={{ fontSize: "7px" }}>
               Photo by{" "}
               <a href="https://unsplash.com/@hush52?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">

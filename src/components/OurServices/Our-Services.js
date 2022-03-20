@@ -7,7 +7,7 @@ export default function OurServices() {
     <div className="ourservices">
       <div className="row ourserviceImage">
         <div className="col col-md-6 col-sm-12 col-xs-12 serviceImage">
-          <img src={TeleMedservices} alt="services" />
+          <img src={TeleMedservices} alt="services" style={{ width: "100%" }} />
           <p style={{ fontSize: "7px" }}>
             Photo by{" "}
             <a href="https://unsplash.com/@rodlong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
