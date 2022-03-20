@@ -153,7 +153,7 @@ export default function BookanAppointment() {
               </div>
             </div>
             <hr />
-            <div className="form-group col">
+            <div className="form-group col" data-aos="fade-up">
               <label for="inputZip">Is this session for an Adult?</label>
               <div className="form-check col-md-2">
                 <input
@@ -170,7 +170,7 @@ export default function BookanAppointment() {
                   Yes
                 </label>
               </div>
-              <div className="form-check col-md-2">
+              <div className="form-check col-md-2" data-aos="fade-up">
                 <input
                   className="form-check-input"
                   type="radio"
@@ -187,8 +187,10 @@ export default function BookanAppointment() {
               </div>
             </div>
             <div className="form-row row">
-              <label for="inputCity">Date Of Birth</label>
-              <div className="form-group col-md-4">
+              <label for="inputCity" data-aos="fade-up">
+                Date Of Birth
+              </label>
+              <div className="form-group col-md-4" data-aos="fade-up">
                 <input
                   type="date"
                   name="date_of_birth"
@@ -202,7 +204,7 @@ export default function BookanAppointment() {
               </div>
             </div>
             <div className="form-row row">
-              <div className="form-group col-md-12">
+              <div className="form-group col-md-12" data-aos="fade-up">
                 <label for="exampleFormControlTextarea1">
                   A little about why you're registering for a telemedicine visit
                   today and some idea of your medical history.
@@ -216,7 +218,7 @@ export default function BookanAppointment() {
               </div>
             </div>
             <div className="form-row row">
-              <div className="form-group col-md-8">
+              <div className="form-group col-md-8" data-aos="fade-up">
                 <label for="exampleFormControlTextarea1">Drug Allergies</label>
                 <br />
                 <small>
@@ -231,7 +233,7 @@ export default function BookanAppointment() {
                 ></textarea>
               </div>
             </div>
-            <div className="form-row row">
+            <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-8">
                 <label for="exampleFormControlTextarea1">Medications</label>
                 <br />
@@ -245,7 +247,7 @@ export default function BookanAppointment() {
                 ></textarea>
               </div>
             </div>
-            <div className="form-row row">
+            <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-8">
                 <label for="exampleFormControlTextarea1">
                   Past Medical History
@@ -259,7 +261,7 @@ export default function BookanAppointment() {
                 ></textarea>
               </div>
             </div>
-            <div className="form-row row">
+            <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-8">
                 <label for="exampleFormControlTextarea1">
                   Past Surgical History
@@ -271,8 +273,8 @@ export default function BookanAppointment() {
                 ></textarea>
               </div>
             </div>
-            <hr />
-            <div className="form-group">
+            <hr data-aos="fade-up" />
+            <div className="form-group" data-aos="fade-up">
               <label for="inputState">Preferred Phamercy:</label>
               <br />
               <label for="inputAddress" style={{ marginTop: "0" }}>
@@ -285,7 +287,7 @@ export default function BookanAppointment() {
                 placeholder="1234 Main St"
               />
             </div>
-            <div className="form-group">
+            <div className="form-group" data-aos="fade-up">
               <label for="inputAddress2">Address 2</label>
               <input
                 type="text"
@@ -294,7 +296,7 @@ export default function BookanAppointment() {
                 placeholder="Building Number or floor Number"
               />
             </div>
-            <div className="form-row row">
+            <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-6">
                 <label for="inputCity">City</label>
                 <input
@@ -371,16 +373,18 @@ export default function BookanAppointment() {
                 />
               </div>
             </div>
-            <hr />
-            <label>How would you like to pay for this service?</label>
-            <div className="form-group col-md-5">
+            <hr data-aos="fade-up" />
+            <label data-aos="fade-up">
+              How would you like to pay for this service?
+            </label>
+            <div className="form-group col-md-5" data-aos="fade-up">
               <select name="payment_methord" className="form-control">
                 <option selected>Choose...</option>
                 <option value="cashapp">CashApp</option>
                 <option value="zelle">Zelle</option>
               </select>
             </div>
-            <div className="form-row row">
+            <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-5">
                 <label for="inputCity">Emegency Contact Number</label>
                 <input
@@ -393,9 +397,9 @@ export default function BookanAppointment() {
                 <small style={{ color: "green" }}>Format: 123-456-7891</small>
               </div>
             </div>
-            <hr />
+            <hr data-aos="fade-up" />
 
-            <div class="form-group row fileUploadSection">
+            <div class="form-group row fileUploadSection" data-aos="fade-up">
               <label for="exampleFormControlFile1">Upload documents.</label>
               <small>File types: pdf, jpg</small>
               <input
@@ -405,7 +409,7 @@ export default function BookanAppointment() {
               />
             </div>
 
-            <hr />
+            <hr data-aos="fade-up" />
             <button type="submit" className="btn btn-primary">
               Submit
             </button>

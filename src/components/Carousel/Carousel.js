@@ -46,7 +46,7 @@ export default function ImageCarousel() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <div className="separator"></div>
+      <div className="separator" data-aos="fade-in"></div>
       <section>
         <div className="sec1MainDiv">
           <div className="col-sm-12 col-md-6 subDiv" data-aos="fade-up">
@@ -65,13 +65,13 @@ export default function ImageCarousel() {
           </div>
         </div>
       </section>
-      <div className="separator"></div>
+      <div className="separator" data-aos="fade-in"></div>
       <section>
         <div
           className="row sec1MainDiv"
           style={{ backgroundColor: "rgb(25, 88, 104)" }}
         >
-          <div className="col-sm-12 col-md-6 subDiv">
+          <div className="col-sm-12 col-md-6 subDiv" data-aos="fade-right">
             <h4>Test section 2</h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -82,7 +82,7 @@ export default function ImageCarousel() {
             </p>
             <h3>Add something</h3>
           </div>
-          <div className="col-sm-12 col-md-6 subDiv">
+          <div className="col-sm-12 col-md-6 subDiv" data-aos="fade-left">
             <img src={Beach} alt="dd" />
           </div>
         </div>
