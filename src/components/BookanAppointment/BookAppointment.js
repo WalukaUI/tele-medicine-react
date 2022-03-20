@@ -413,7 +413,11 @@ export default function BookanAppointment() {
             </div>
 
             <hr data-aos="fade-up" />
-            <button type="submit" className="btn btn-primary">
+            <button
+              type="submit"
+              className="btn btn-primary"
+              data-aos="fade-up"
+            >
               Submit
             </button>
           </form>
