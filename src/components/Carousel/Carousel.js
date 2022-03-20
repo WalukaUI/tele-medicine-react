@@ -87,6 +87,7 @@ export default function ImageCarousel() {
           </div>
         </div>
       </section>
+      <div className="separator" data-aos="fade-in"></div>
     </>
   );
 }

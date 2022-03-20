@@ -1,7 +1,7 @@
 import "./_footer.scss";
 export default function Footer() {
   return (
-    <div className="footerMainDiv">
+    <div className="footerMainDiv" data-aos="fade-up">
       <div className="col col-sm-12 col-md-4 footerDiv1">
         <h6>LOCATION</h6>
         <p>615, Loies Street</p>
