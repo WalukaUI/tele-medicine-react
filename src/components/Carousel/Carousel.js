@@ -1,3 +1,4 @@
+import { React, useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import "./_carousel.scss";
 import Dark from "./images/dark.jpg";
@@ -48,10 +49,10 @@ export default function ImageCarousel() {
       <div className="separator"></div>
       <section>
         <div className="sec1MainDiv">
-          <div className="col-sm-12 col-md-6 subDiv">
+          <div className="col-sm-12 col-md-6 subDiv" data-aos="fade-up">
             <img src={Dark} alt="dd" />
           </div>
-          <div className="col-sm-12 col-md-6 subDiv">
+          <div className="col-sm-12 col-md-6 subDiv" data-aos="fade-up">
             <h4>Test words</h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
