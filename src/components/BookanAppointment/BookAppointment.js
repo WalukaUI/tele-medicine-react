@@ -86,7 +86,7 @@ export default function BookanAppointment() {
               <div className="form-group col-md-4">
                 <label for="inputState">State</label>
                 <select className="form-control" name="state" required>
-                  <option selected>Choose...</option>
+                  <option defaultValue>Choose...</option>
                   <option value="">N/A</option>
                   <option value="AK">Alaska</option>
                   <option value="AL">Alabama</option>
@@ -308,7 +308,7 @@ export default function BookanAppointment() {
               <div className="form-group col-md-4">
                 <label for="inputState">State</label>
                 <select name="state_of_phamercy" className="form-control">
-                  <option selected>Choose...</option>
+                  <option defaultValue>Choose...</option>
                   <option value="">N/A</option>
                   <option value="AK">Alaska</option>
                   <option value="AL">Alabama</option>
@@ -379,7 +379,7 @@ export default function BookanAppointment() {
             </label>
             <div className="form-group col-md-5" data-aos="fade-up">
               <select name="payment_methord" className="form-control">
-                <option selected>Choose...</option>
+                <option defaultValue>Choose...</option>
                 <option value="cashapp">CashApp</option>
                 <option value="zelle">Zelle</option>
               </select>
@@ -399,7 +399,10 @@ export default function BookanAppointment() {
             </div>
             <hr data-aos="fade-up" />
 
-            <div class="form-group row fileUploadSection" data-aos="fade-up">
+            <div
+              className="form-group row fileUploadSection"
+              data-aos="fade-up"
+            >
               <label for="exampleFormControlFile1">Upload documents.</label>
               <small>File types: pdf, jpg</small>
               <input
