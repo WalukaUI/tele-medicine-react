@@ -3,9 +3,9 @@ import EmotionalImg from "./emotional.jpg";
 export default function EmotionalHealth() {
   return (
     <>
-      <div className="emotionalImage">
-        <div className="row emotional">
-          <div className="col col-md-6 col-sm-12 mx-auto">
+      <div className="emotional">
+        <div className="row emotionalImage">
+          <div className="col col-md-6 col-sm-12 mx-auto" data-aos="fade-up">
             <img src={EmotionalImg} alt="emotional" />
             <p style={{ fontSize: "7px" }}>
               Photo by{" "}
@@ -15,7 +15,7 @@ export default function EmotionalHealth() {
               from Pexels
             </p>
           </div>
-          <div className="col col-md-6 col-sm-12mx-auto">
+          <div className="col col-md-6 col-sm-12mx-auto" data-aos="fade-up">
             You are neaver alone, We are here to help you.
             <br />
           </div>

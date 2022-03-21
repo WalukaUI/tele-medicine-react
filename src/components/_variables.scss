@@ -1,7 +1,11 @@
 $bkgroundcolor: rgb(182, 55, 102);
-@mixin flexCenter($direction) {
+@mixin flexCenter($direction, $space) {
   display: flex;
   flex-direction: $direction;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: $space;
+}
+@mixin widthNheight($width, $height) {
+  width: $width;
+  height: $height;
 }

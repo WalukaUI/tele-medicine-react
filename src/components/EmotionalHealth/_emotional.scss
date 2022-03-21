@@ -1,17 +1,15 @@
-.emotionalImage {
+@import "../variables";
+
+.emotional {
   padding-top: 0;
   position: relative;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  justify-items: center;
   background-image: url(../../../public/images/emotional-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
   img {
-    width: 70%;
-    height: 80%;
+    @include widthNheight(70%, 80%);
   }
 }
 .attribute {
@@ -21,7 +19,7 @@
   font-size: 0.5rem;
 }
 @media only screen and (max-width: 600px) {
-  .emotional {
+  .emotionalImage {
     flex-direction: column;
   }
 }

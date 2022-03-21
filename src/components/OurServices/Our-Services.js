@@ -6,7 +6,10 @@ export default function OurServices() {
   return (
     <div className="ourservices">
       <div className="row ourserviceImage">
-        <div className="col col-md-6 col-sm-12 col-xs-12 serviceImage">
+        <div
+          className="col col-md-6 col-sm-12 col-xs-12 serviceImage"
+          data-aos="fade-in"
+        >
           <img src={TeleMedservices} alt="services" style={{ width: "100%" }} />
           <p style={{ fontSize: "7px" }}>
             Photo by{" "}
@@ -19,7 +22,10 @@ export default function OurServices() {
             </a>
           </p>
         </div>
-        <div className="col col-md-6 col-sm-12 col-xs-12">
+        <div
+          className="col col-md-6 col-sm-12 col-xs-12 serviceList"
+          data-aos="fade-in"
+        >
           <h5>
             Our Services What can you get consulted and treated here for ?{" "}
           </h5>

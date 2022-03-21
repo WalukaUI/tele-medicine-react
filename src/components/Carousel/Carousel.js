@@ -14,8 +14,9 @@ export default function ImageCarousel() {
             src="./Carousel/1.jpg"
             alt="First slide"
           />
-          <Carousel.Caption className="caption cap1">
-            <h3>First slide label</h3>
+
+          <Carousel.Caption className="caption cap1 cap11">
+            <h3>First slide labelll</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>

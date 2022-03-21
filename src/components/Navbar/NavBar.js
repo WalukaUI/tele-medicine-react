@@ -4,7 +4,7 @@ import "./_navbar.scss";
 export default function NavBar() {
   return (
     <>
-      <Navbar expand="lg" style={{ fontSize: "1.3rem" }}>
+      <Navbar expand="lg" style={{ fontSize: "1.3rem" }} data-aos="fade-down">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav nav-bkground" />
           <Navbar.Collapse id="basic-navbar-nav">

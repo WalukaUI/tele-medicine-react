@@ -5,13 +5,16 @@ import diaryImage from "./diary.jpg";
 export default function GetAppointment() {
   return (
     <>
-      <div className="howtogetappImage">
-        <h4>How to get an appointment ? </h4>
+      <div className="howtogetAppointment">
+        <h4 data-aos="fade-in">How to get an appointment ? </h4>
         <div className="row howtogetapp">
-          <div className="col col-md-6 col-sm-12 mx-auto">
+          <div className="col col-md-6 col-sm-12 mx-auto" data-aos="fade-up">
             <img src={GetAppImage} alt="howtogetappointment" />
           </div>
-          <div className="col col-md-6 col-sm-12mx-auto">
+          <div
+            className="col col-md-6 col-sm-12mx-auto howToGetAppList"
+            data-aos="fade-up"
+          >
             <ul>
               <h5>Our criteria</h5>
               <li>
@@ -32,7 +35,10 @@ export default function GetAppointment() {
         </div>
         <br />
         <div className="row howtogetapp">
-          <div className="col col-md-6 col-sm-12 mx-auto">
+          <div
+            className="col col-md-6 col-sm-12 mx-auto howToGetAppList"
+            data-aos="fade-up"
+          >
             <h5>To schedule an appointment follow the 3 steps:</h5>
             <ul>
               <li>
@@ -45,7 +51,7 @@ export default function GetAppointment() {
               </li>
             </ul>
           </div>
-          <div className="col col-md-6 col-sm-12mx-auto">
+          <div className="col col-md-6 col-sm-12mx-auto" data-aos="fade-up">
             <img src={diaryImage} alt="howtogetappointment" />
           </div>
         </div>

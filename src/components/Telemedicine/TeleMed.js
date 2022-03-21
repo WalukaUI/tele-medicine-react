@@ -6,7 +6,7 @@ export default function TeleMed() {
     <>
       <div className="telemedImage">
         <div className="row telemed">
-          <div className="col col-md-6 col-sm-12 mx-auto">
+          <div className="col col-md-6 col-sm-12 mx-auto" data-aos="fade-in">
             <img src={Telemed} alt="telemedicine" className="faded faded-all" />
             <p style={{ fontSize: "7px" }}>
               Photo by{" "}
@@ -19,7 +19,10 @@ export default function TeleMed() {
               </a>
             </p>
           </div>
-          <div className="col col-md-6 col-sm-12mx-auto">
+          <div
+            className="col col-md-6 col-sm-12mx-auto teleMedList"
+            data-aos="fade-in"
+          >
             <h6>
               When you are sick and don't want to leave home we are here to
               offer affordable and convenient phone and video consultation to

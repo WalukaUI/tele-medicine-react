@@ -8,7 +8,7 @@ export default function BookanAppointment() {
         <p>Please fill out the form to make a new appointment.</p>
         <div className="appointmentformContainer mx-auto">
           <form style={{ textAlign: "left" }}>
-            <div className="form-row row">
+            <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-6">
                 <label>First Name</label>
                 <input
@@ -30,7 +30,7 @@ export default function BookanAppointment() {
                 />
               </div>
             </div>
-            <div className="form-group">
+            <div className="form-group" data-aos="fade-up">
               <label>Email Address</label>
               <input
                 type="email"
@@ -40,7 +40,7 @@ export default function BookanAppointment() {
                 required
               />
             </div>
-            <div className="form-row row">
+            <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-4">
                 <label>Phone Number</label>
                 <input
@@ -54,7 +54,7 @@ export default function BookanAppointment() {
                 <small style={{ color: "green" }}>Format: 123-456-7891</small>
               </div>
             </div>
-            <div className="form-group">
+            <div className="form-group" data-aos="fade-up">
               <label>Address</label>
               <input
                 type="text"
@@ -64,7 +64,7 @@ export default function BookanAppointment() {
                 required
               />
             </div>
-            <div className="form-group">
+            <div className="form-group" data-aos="fade-up">
               <label>Address 2</label>
               <input
                 type="text"
@@ -73,7 +73,7 @@ export default function BookanAppointment() {
                 placeholder="Apartment, studio, or floor"
               />
             </div>
-            <div className="form-row row">
+            <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-6">
                 <label>City</label>
                 <input
@@ -83,7 +83,7 @@ export default function BookanAppointment() {
                   required
                 />
               </div>
-              <div className="form-group col-md-4">
+              <div className="form-group col-md-4" data-aos="fade-up">
                 <label>State</label>
                 <select className="form-control" name="state" required>
                   <option defaultValue>Choose...</option>
@@ -142,7 +142,7 @@ export default function BookanAppointment() {
                   <option value="WY">Wyoming</option>
                 </select>
               </div>
-              <div className="form-group col-md-2">
+              <div className="form-group col-md-2" data-aos="fade-up">
                 <label>Zip</label>
                 <input
                   type="text"
@@ -152,7 +152,7 @@ export default function BookanAppointment() {
                 />
               </div>
             </div>
-            <hr />
+            <hr data-aos="fade-up" />
             <div className="form-group col" data-aos="fade-up">
               <label>Is this session for an Adult?</label>
               <div className="form-check col-md-2">

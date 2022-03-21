@@ -4,7 +4,7 @@ import { Form, Button } from "react-bootstrap";
 export default function Signup() {
   return (
     <>
-      <div className="singnupImage col">
+      <div className="singnupImage col" data-aos="fade-in">
         <h5>Sign Up</h5>
         <p>Please fill below form to create a new account</p>
         <div className="formContainer">

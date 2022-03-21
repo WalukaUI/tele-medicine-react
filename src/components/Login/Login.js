@@ -4,7 +4,7 @@ import { Nav, Form, Button } from "react-bootstrap";
 export default function Login() {
   return (
     <>
-      <div className="loginImage col">
+      <div className="loginImage col" data-aos="fade-in">
         <div>
           <h5>Don't have an Account</h5>
           <Nav.Link href="/signup">

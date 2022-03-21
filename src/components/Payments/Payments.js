@@ -4,9 +4,9 @@ import PaymentCare from "./payment-care.jpg";
 export default function Payments() {
   return (
     <>
-      <div className="paymentsImage">
-        <div className="row payments">
-          <div className="col col-md-6 col-sm-12 mx-auto">
+      <div className="payments">
+        <div className="row paymentsImage">
+          <div className="col col-md-6 col-sm-12 mx-auto" data-aos="fade-in">
             <img src={PaymentCare} alt="care" />
             <p style={{ fontSize: "7px" }}>
               Photo by{" "}
@@ -16,7 +16,7 @@ export default function Payments() {
               from Pexels
             </p>
           </div>
-          <div className="col col-md-6 col-sm-12mx-auto">
+          <div className="col col-md-6 col-sm-12mx-auto" data-aos="fade-in">
             Now you can have our service as low as $25 onwards per session.
             <br />
             <br />
