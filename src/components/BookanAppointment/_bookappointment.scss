@@ -30,3 +30,9 @@
   background-color: rgb(199, 209, 209);
   padding: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .appointmentformContainer {
+    width: 80%;
+  }
+}
