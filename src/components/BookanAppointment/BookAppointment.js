@@ -10,7 +10,7 @@ export default function BookanAppointment() {
           <form style={{ textAlign: "left" }}>
             <div className="form-row row">
               <div className="form-group col-md-6">
-                <label for="inputEmail4">First Name</label>
+                <label>First Name</label>
                 <input
                   type="text"
                   className="form-control"
@@ -20,7 +20,7 @@ export default function BookanAppointment() {
                 />
               </div>
               <div className="form-group col-md-6">
-                <label for="inputPassword4">Last Name</label>
+                <label>Last Name</label>
                 <input
                   type="text"
                   className="form-control"
@@ -31,7 +31,7 @@ export default function BookanAppointment() {
               </div>
             </div>
             <div className="form-group">
-              <label for="inputAddress">Email Address</label>
+              <label>Email Address</label>
               <input
                 type="email"
                 className="form-control"
@@ -42,7 +42,7 @@ export default function BookanAppointment() {
             </div>
             <div className="form-row row">
               <div className="form-group col-md-4">
-                <label for="inputCity">Phone Number</label>
+                <label>Phone Number</label>
                 <input
                   type="tel"
                   name="phone_number"
@@ -55,7 +55,7 @@ export default function BookanAppointment() {
               </div>
             </div>
             <div className="form-group">
-              <label for="inputAddress">Address</label>
+              <label>Address</label>
               <input
                 type="text"
                 className="form-control"
@@ -65,7 +65,7 @@ export default function BookanAppointment() {
               />
             </div>
             <div className="form-group">
-              <label for="inputAddress2">Address 2</label>
+              <label>Address 2</label>
               <input
                 type="text"
                 className="form-control"
@@ -75,7 +75,7 @@ export default function BookanAppointment() {
             </div>
             <div className="form-row row">
               <div className="form-group col-md-6">
-                <label for="inputCity">City</label>
+                <label>City</label>
                 <input
                   type="text"
                   className="form-control"
@@ -84,7 +84,7 @@ export default function BookanAppointment() {
                 />
               </div>
               <div className="form-group col-md-4">
-                <label for="inputState">State</label>
+                <label>State</label>
                 <select className="form-control" name="state" required>
                   <option defaultValue>Choose...</option>
                   <option value="">N/A</option>
@@ -143,7 +143,7 @@ export default function BookanAppointment() {
                 </select>
               </div>
               <div className="form-group col-md-2">
-                <label for="inputZip">Zip</label>
+                <label>Zip</label>
                 <input
                   type="text"
                   className="form-control"
@@ -154,7 +154,7 @@ export default function BookanAppointment() {
             </div>
             <hr />
             <div className="form-group col" data-aos="fade-up">
-              <label for="inputZip">Is this session for an Adult?</label>
+              <label>Is this session for an Adult?</label>
               <div className="form-check col-md-2">
                 <input
                   className="form-check-input"
@@ -162,11 +162,7 @@ export default function BookanAppointment() {
                   name="isforanadult"
                   value="yes"
                 />
-                <label
-                  className="form-check-label"
-                  for="exampleRadios1"
-                  style={{ marginTop: "0" }}
-                >
+                <label className="form-check-label" style={{ marginTop: "0" }}>
                   Yes
                 </label>
               </div>
@@ -177,19 +173,13 @@ export default function BookanAppointment() {
                   name="isforanadult"
                   value="no"
                 />
-                <label
-                  className="form-check-label"
-                  for="exampleRadios2"
-                  style={{ marginTop: "0" }}
-                >
+                <label className="form-check-label" style={{ marginTop: "0" }}>
                   No
                 </label>
               </div>
             </div>
             <div className="form-row row">
-              <label for="inputCity" data-aos="fade-up">
-                Date Of Birth
-              </label>
+              <label data-aos="fade-up">Date Of Birth</label>
               <div className="form-group col-md-4" data-aos="fade-up">
                 <input
                   type="date"
@@ -205,7 +195,7 @@ export default function BookanAppointment() {
             </div>
             <div className="form-row row">
               <div className="form-group col-md-12" data-aos="fade-up">
-                <label for="exampleFormControlTextarea1">
+                <label>
                   A little about why you're registering for a telemedicine visit
                   today and some idea of your medical history.
                 </label>
@@ -219,7 +209,7 @@ export default function BookanAppointment() {
             </div>
             <div className="form-row row">
               <div className="form-group col-md-8" data-aos="fade-up">
-                <label for="exampleFormControlTextarea1">Drug Allergies</label>
+                <label>Drug Allergies</label>
                 <br />
                 <small>
                   If you have no allergies, Please write NKDA <br />
@@ -235,7 +225,7 @@ export default function BookanAppointment() {
             </div>
             <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-8">
-                <label for="exampleFormControlTextarea1">Medications</label>
+                <label>Medications</label>
                 <br />
                 <small>
                   Please write all medications you are currently taking.
@@ -249,9 +239,7 @@ export default function BookanAppointment() {
             </div>
             <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-8">
-                <label for="exampleFormControlTextarea1">
-                  Past Medical History
-                </label>
+                <label>Past Medical History</label>
                 <br />
                 <small>List all chronic conditions.</small>
                 <textarea
@@ -263,9 +251,7 @@ export default function BookanAppointment() {
             </div>
             <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-8">
-                <label for="exampleFormControlTextarea1">
-                  Past Surgical History
-                </label>
+                <label>Past Surgical History</label>
                 <textarea
                   className="form-control"
                   rows="2"
@@ -275,11 +261,9 @@ export default function BookanAppointment() {
             </div>
             <hr data-aos="fade-up" />
             <div className="form-group" data-aos="fade-up">
-              <label for="inputState">Preferred Phamercy:</label>
+              <label>Preferred Phamercy:</label>
               <br />
-              <label for="inputAddress" style={{ marginTop: "0" }}>
-                Address
-              </label>
+              <label style={{ marginTop: "0" }}>Address</label>
               <input
                 type="text"
                 className="form-control"
@@ -288,7 +272,7 @@ export default function BookanAppointment() {
               />
             </div>
             <div className="form-group" data-aos="fade-up">
-              <label for="inputAddress2">Address 2</label>
+              <label>Address 2</label>
               <input
                 type="text"
                 className="form-control"
@@ -298,7 +282,7 @@ export default function BookanAppointment() {
             </div>
             <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-6">
-                <label for="inputCity">City</label>
+                <label>City</label>
                 <input
                   type="text"
                   className="form-control"
@@ -306,7 +290,7 @@ export default function BookanAppointment() {
                 />
               </div>
               <div className="form-group col-md-4">
-                <label for="inputState">State</label>
+                <label>State</label>
                 <select name="state_of_phamercy" className="form-control">
                   <option defaultValue>Choose...</option>
                   <option value="">N/A</option>
@@ -365,7 +349,7 @@ export default function BookanAppointment() {
                 </select>
               </div>
               <div className="form-group col-md-2">
-                <label for="inputZip">Zip</label>
+                <label>Zip</label>
                 <input
                   type="text"
                   className="form-control"
@@ -386,7 +370,7 @@ export default function BookanAppointment() {
             </div>
             <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-5">
-                <label for="inputCity">Emegency Contact Number</label>
+                <label>Emegency Contact Number</label>
                 <input
                   type="tel"
                   name="emergency_phone_number"
@@ -403,7 +387,7 @@ export default function BookanAppointment() {
               className="form-group row fileUploadSection"
               data-aos="fade-up"
             >
-              <label for="exampleFormControlFile1">Upload documents.</label>
+              <label>Upload documents.</label>
               <small>File types: pdf, jpg</small>
               <input
                 type="file"
