@@ -1,11 +1,4 @@
-import {
-  Nav,
-  Navbar,
-  Container,
-  NavDropdown,
-  Button,
-  Dropdown,
-} from "react-bootstrap";
+import { Nav, Navbar, Container, NavDropdown, Button } from "react-bootstrap";
 import "./_navbar.scss";
 
 export default function NavBar() {
