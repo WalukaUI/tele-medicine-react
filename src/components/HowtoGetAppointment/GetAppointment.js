@@ -17,6 +17,7 @@ export default function GetAppointment() {
           >
             <ul>
               <h5>Our criteria</h5>
+              <br />
               <li>
                 Do not provide controlled substance prescriptions under any
                 circumstance
@@ -40,6 +41,7 @@ export default function GetAppointment() {
             data-aos="fade-up"
           >
             <h5>To schedule an appointment follow the 3 steps:</h5>
+            <br />
             <ul>
               <li>
                 Please fill out the quick form - this helps us to serve you

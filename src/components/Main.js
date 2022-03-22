@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./Navbar/NavBar";
 import ImageCarousel from "./Carousel/Carousel";
@@ -15,9 +15,15 @@ import Payments from "./Payments/Payments";
 import Signup from "./Signup/Signup";
 
 export default function Main() {
+  const [activeate, setActivate] = useState("home");
+
+  function makeactive(d) {
+    console.log(d);
+    setActivate(d);
+  }
   return (
     <>
-      <NavBar />
+      <NavBar activeate={activeate} makeactive={makeactive} />
       <Routes>
         <Route path="/" element={<ImageCarousel />} />
         <Route path="/tele-medicine" element={<TeleMed />} />

@@ -1,21 +1,38 @@
+// import { useState } from "react";
 import { Nav, Navbar, Container, NavDropdown, Button } from "react-bootstrap";
 import "./_navbar.scss";
 
-export default function NavBar() {
+export default function NavBar(activeate, makeactive) {
   return (
     <>
-      <Navbar expand="lg" style={{ fontSize: "1.3rem" }} data-aos="fade-down">
+      <Navbar
+        expand="lg"
+        style={{ fontSize: "1.2rem", textAlign: "center" }}
+        data-aos="fade-down"
+      >
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav nav-bkground" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link style={{ color: "black" }} href="/">
+              <Nav.Link
+                style={{ color: activeate === "home" ? "red" : "black" }}
+                href="/"
+                onClick={() => makeactive("home")}
+              >
                 Home
               </Nav.Link>
-              <Nav.Link style={{ color: "black" }} href="/tele-medicine">
+              <Nav.Link
+                style={{ color: activeate === "telemed" ? "red" : "black" }}
+                href="/tele-medicine"
+                onClick={() => makeactive("telemed")}
+              >
                 Telemedicine
               </Nav.Link>
-              <Nav.Link style={{ color: "black" }} href="/our-services">
+              <Nav.Link
+                style={{ color: activeate === "services" ? "red" : "black" }}
+                href="/our-services"
+                onClick={() => makeactive("services")}
+              >
                 Our-Services
               </Nav.Link>
               <Nav.Link style={{ color: "black" }} href="/emotional-health">
