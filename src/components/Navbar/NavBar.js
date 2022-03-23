@@ -13,25 +13,25 @@ export default function NavBar(activeate, makeactive) {
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav nav-bkground" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto" variant="pills" defaultActiveKey="/">
               <Nav.Link
                 style={{ color: activeate === "home" ? "red" : "black" }}
-                href="/"
-                onClick={() => makeactive("home")}
+                eventKey="/"
+                // onClick={() => makeactive("home")}
               >
                 Home
               </Nav.Link>
               <Nav.Link
                 style={{ color: activeate === "telemed" ? "red" : "black" }}
                 href="/tele-medicine"
-                onClick={() => makeactive("telemed")}
+                //onClick={() => makeactive("telemed")}
               >
                 Telemedicine
               </Nav.Link>
               <Nav.Link
                 style={{ color: activeate === "services" ? "red" : "black" }}
                 href="/our-services"
-                onClick={() => makeactive("services")}
+                //onClick={() => makeactive("services")}
               >
                 Our-Services
               </Nav.Link>

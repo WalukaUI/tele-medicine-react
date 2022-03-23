@@ -1,6 +1,5 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { Route, Routes } from "react-router-dom";
-import NavBar from "./Navbar/NavBar";
 import ImageCarousel from "./Carousel/Carousel";
 import TeleMed from "./Telemedicine/TeleMed";
 import Footer from "./Footer/Footer.js";
@@ -13,17 +12,12 @@ import Login from "./Login/Login";
 import BookanAppointment from "./BookanAppointment/BookAppointment";
 import Payments from "./Payments/Payments";
 import Signup from "./Signup/Signup";
+import Nav2 from "./Nav2/Nav2.js";
 
 export default function Main() {
-  const [activeate, setActivate] = useState("home");
-
-  function makeactive(d) {
-    console.log(d);
-    setActivate(d);
-  }
   return (
     <>
-      <NavBar activeate={activeate} makeactive={makeactive} />
+      <Nav2 />
       <Routes>
         <Route path="/" element={<ImageCarousel />} />
         <Route path="/tele-medicine" element={<TeleMed />} />
