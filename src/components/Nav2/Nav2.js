@@ -1,13 +1,13 @@
-import { useState } from "react";
-//import { Nav, Navbar, Container, NavDropdown, Button } from "bootstrap";
 import "./_nav2.scss";
 
-export default function Nav2() {
-  const [activeate, setActivate] = useState("");
-  // function setColor(e) {
-  //   e.preventDefault();
-  //   setActivate()
-  // }
+export default function Nav2({ navigate }) {
+  function setColor(path) {
+    // if (navigate(-1) === path) {
+    //   return "red";
+    // }
+    return "green";
+  }
+
   return (
     <>
       <nav
@@ -16,12 +16,7 @@ export default function Nav2() {
         data-aos="fade-down"
       >
         <div className="container-fluid">
-          <a
-            className="navbar-brand"
-            href="/"
-            onClick={() => setActivate("home")}
-            style={{ color: activeate === "home" ? "red" : "black" }}
-          >
+          <a className="navbar-brand" href="/" style={{ color: "black" }}>
             Home
           </a>
           <button
@@ -41,8 +36,7 @@ export default function Nav2() {
                 <a
                   className="nav-link"
                   href="/tele-medicine"
-                  onClick={() => setActivate("tele")}
-                  style={{ color: activeate === "tele" ? "red" : "black" }}
+                  style={{ color: "black" }}
                 >
                   Telemedicine
                 </a>
@@ -51,8 +45,7 @@ export default function Nav2() {
                 <a
                   className="nav-link"
                   href="/our-services"
-                  onClick={() => setActivate("service")}
-                  style={{ color: activeate === "service" ? "red" : "black" }}
+                  style={{ color: setColor("/our-services") }}
                 >
                   Our Services
                 </a>
@@ -62,7 +55,7 @@ export default function Nav2() {
                   className="nav-link"
                   href="/emotional-health"
                   style={{
-                    color: activeate === "emotional-health" ? "red" : "black",
+                    color: "black",
                   }}
                 >
                   Emotional Health
@@ -72,7 +65,7 @@ export default function Nav2() {
                 <a
                   className="nav-link"
                   href="/payments"
-                  style={{ color: activeate === "payments" ? "red" : "black" }}
+                  style={{ color: "black" }}
                 >
                   Payments
                 </a>
@@ -84,6 +77,7 @@ export default function Nav2() {
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  href="!#"
                 >
                   Other
                 </a>

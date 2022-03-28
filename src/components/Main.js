@@ -1,5 +1,5 @@
 import { React } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import ImageCarousel from "./Carousel/Carousel";
 import TeleMed from "./Telemedicine/TeleMed";
 import Footer from "./Footer/Footer.js";
@@ -15,9 +15,10 @@ import Signup from "./Signup/Signup";
 import Nav2 from "./Nav2/Nav2.js";
 
 export default function Main() {
+  const navigate = useNavigate();
   return (
     <>
-      <Nav2 />
+      <Nav2 navigate={navigate} />
       <Routes>
         <Route path="/" element={<ImageCarousel />} />
         <Route path="/tele-medicine" element={<TeleMed />} />
