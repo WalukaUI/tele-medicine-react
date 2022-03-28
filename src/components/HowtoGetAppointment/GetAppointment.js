@@ -58,21 +58,23 @@ export default function GetAppointment() {
           </div>
         </div>
         <div className="attribute">
-          <p style={{ fontSize: "7px" }}>
+          <p style={{ fontSize: "6px" }}>
             Photo by{" "}
             <a href="https://www.pexels.com/photo/organizing-calendar-and-vase-on-a-table-8580799/">
               RODNAE Productions
             </a>{" "}
             from Pexels
           </p>
-          Photo by{" "}
-          <a href="https://unsplash.com/@stilclassis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Marissa Grootes
-          </a>{" "}
-          on{" "}
-          <a href="https://unsplash.com/collections/1928418/work-desk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-            Unsplash
-          </a>
+          <p style={{ fontSize: "6px" }}>
+            Photo by{" "}
+            <a href="https://unsplash.com/@stilclassis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Marissa Grootes
+            </a>{" "}
+            on{" "}
+            <a href="https://unsplash.com/collections/1928418/work-desk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </p>
         </div>
       </div>
     </>

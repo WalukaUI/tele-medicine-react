@@ -53,12 +53,12 @@ export default function Nav2({ navigate }) {
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  href="/emotional-health"
+                  href="/about-us"
                   style={{
                     color: "black",
                   }}
                 >
-                  Emotional Health
+                  About Us
                 </a>
               </li>
               <li className="nav-item">
@@ -96,8 +96,8 @@ export default function Nav2({ navigate }) {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/about-us">
-                      About Us
+                    <a className="dropdown-item" href="/emotional-health">
+                      Emotional Health
                     </a>
                   </li>
                 </ul>
