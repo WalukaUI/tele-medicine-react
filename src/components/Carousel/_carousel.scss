@@ -16,11 +16,11 @@
 }
 .cap2 {
   color: rgb(199, 236, 30);
-  background-color: rgb(25, 88, 104);
+  // background-color: rgb(25, 88, 104);
 }
 
-.sec1MainDiv {
-  background-color: black;
+.sec1MainDiv,
+.sec2MainDiv {
   height: 500px;
   @include flexCenter(row, space-around);
   img {
@@ -28,6 +28,13 @@
     max-height: 100%;
   }
 }
+.sec1MainDiv {
+  background-image: linear-gradient(180deg, rgb(25, 88, 104), #8ccbbe);
+}
+.sec2MainDiv {
+  background-image: linear-gradient(180deg, #8ccbbe, rgb(25, 88, 104));
+}
+
 .separator {
   background-color: gray;
   @include widthNheight(100%, 30px);

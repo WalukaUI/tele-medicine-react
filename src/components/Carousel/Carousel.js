@@ -1,8 +1,8 @@
 import { React } from "react";
 import { Carousel } from "react-bootstrap";
 import "./_carousel.scss";
-import Dark from "./images/dark.jpg";
-import Beach from "./images/beach.jpg";
+import Dark from "./images/luna.jpg";
+import Beach from "./images/kike.jpg";
 
 export default function ImageCarousel() {
   return (
@@ -66,12 +66,8 @@ export default function ImageCarousel() {
           </div>
         </div>
       </section>
-      <div className="separator" data-aos="fade-in"></div>
       <section>
-        <div
-          className="row sec1MainDiv"
-          style={{ backgroundColor: "rgb(25, 88, 104)" }}
-        >
+        <div className="row sec2MainDiv ">
           <div className="col-sm-12 col-md-6 subDiv" data-aos="fade-right">
             <h4>Test section 2</h4>
             <p>
@@ -88,7 +84,6 @@ export default function ImageCarousel() {
           </div>
         </div>
       </section>
-      <div className="separator" data-aos="fade-in"></div>
     </>
   );
 }

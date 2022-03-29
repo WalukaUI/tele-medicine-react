@@ -7,7 +7,15 @@ export default function TeleMed() {
       <div className="telemedImage">
         <div className="row telemed">
           <div className="col col-md-6 col-sm-12 mx-auto" data-aos="fade-in">
-            <img src={Telemed} alt="telemedicine" className="faded faded-all" />
+            <div className="parent">
+              <img
+                src={Telemed}
+                alt="telemedicine"
+                className="faded faded-all"
+              />
+              <div className="layer"></div>
+            </div>
+
             <p style={{ fontSize: "7px" }}>
               Photo by{" "}
               <a href="https://unsplash.com/@hush52?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">

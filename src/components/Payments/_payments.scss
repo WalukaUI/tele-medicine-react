@@ -11,12 +11,6 @@
     height: 80%;
   }
 }
-.attribute {
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  font-size: 0.5rem;
-}
 @media only screen and (max-width: 600px) {
   .paymentsImage {
     flex-direction: column;
