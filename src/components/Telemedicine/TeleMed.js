@@ -13,7 +13,7 @@ export default function TeleMed() {
                 alt="telemedicine"
                 className="faded faded-all"
               />
-              <div className="layer"></div>
+              <div className="teleMedLayer"></div>
             </div>
 
             <p style={{ fontSize: "7px" }}>

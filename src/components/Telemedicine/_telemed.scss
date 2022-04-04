@@ -12,18 +12,8 @@
     @include widthNheight(100%, 100%);
   }
 }
-.layer {
-  opacity: 0.7;
-  z-index: 2;
-  top: 13.5%;
-  position: absolute;
-  width: 80%;
-  height: 74%;
-  background-image: linear-gradient(
-    to right,
-    rgba(167, 207, 223, 0) 0%,
-    #c6a38d 100%
-  );
+.teleMedLayer {
+  @include layerColor(right, #c6a38d);
 }
 .parent {
   position: relative;

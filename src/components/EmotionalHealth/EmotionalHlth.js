@@ -6,7 +6,10 @@ export default function EmotionalHealth() {
       <div className="emotional">
         <div className="row emotionalImage">
           <div className="col col-md-6 col-sm-12 mx-auto" data-aos="fade-up">
-            <img src={EmotionalImg} alt="emotional" />
+            <div className="parent">
+              <img src={EmotionalImg} alt="emotional" />
+              <div className="emotionalLayer"></div>
+            </div>
             <p style={{ fontSize: "7px" }}>
               Photo by{" "}
               <a href="https://www.pexels.com/photo/young-man-in-sleepwear-suffering-from-headache-in-morning-3771115/">

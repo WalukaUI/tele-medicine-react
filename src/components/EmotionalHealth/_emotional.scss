@@ -9,8 +9,11 @@
   background-size: cover;
   padding: 50px;
   img {
-    @include widthNheight(70%, 80%);
+    @include widthNheight(100%, 100%);
   }
+}
+.emotionalLayer {
+  @include layerColor(right, #b7d3e3);
 }
 @media only screen and (max-width: 600px) {
   .emotionalImage {
