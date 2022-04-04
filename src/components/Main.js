@@ -1,5 +1,5 @@
-import { React } from "react";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import ImageCarousel from "./Carousel/Carousel";
 import TeleMed from "./Telemedicine/TeleMed";
 import Footer from "./Footer/Footer.js";
@@ -15,13 +15,15 @@ import Signup from "./Signup/Signup";
 import Nav2 from "./Nav2/Nav2.js";
 
 export default function Main() {
-  const navigate = useNavigate();
+  const [word, setWord] = useState("None");
+  const location = useLocation();
+
   return (
     <>
-      <Nav2 navigate={navigate} />
+      <Nav2 location={location} setWord={setWord} />
       <Routes>
         <Route path="/" element={<ImageCarousel />} />
-        <Route path="/tele-medicine" element={<TeleMed />} />
+        <Route path="/tele-medicine" element={<TeleMed word={word} />} />
         <Route path="/our-services" element={<OurServices />} />
         <Route path="/emotional-health" element={<EmotionalHealth />} />
         <Route path="/patient-education" element={<PatientEdu />} />

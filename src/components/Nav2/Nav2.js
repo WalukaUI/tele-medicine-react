@@ -1,11 +1,11 @@
 import "./_nav2.scss";
 
-export default function Nav2({ navigate }) {
+export default function Nav2({ location, setWord }) {
   function setColor(path) {
-    // if (navigate(-1) === path) {
-    //   return "red";
-    // }
-    return "green";
+    if (location.pathname === path) {
+      return { color: "red", textDecoration: "underline" };
+    }
+    return { color: "black" };
   }
 
   return (
@@ -16,7 +16,7 @@ export default function Nav2({ navigate }) {
         data-aos="fade-down"
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/" style={{ color: "black" }}>
+          <a className="navbar-brand" href="/" style={setColor("/")}>
             Home
           </a>
           <button
@@ -36,7 +36,7 @@ export default function Nav2({ navigate }) {
                 <a
                   className="nav-link"
                   href="/tele-medicine"
-                  style={{ color: "black" }}
+                  style={setColor("/tele-medicine")}
                 >
                   Telemedicine
                 </a>
@@ -45,27 +45,27 @@ export default function Nav2({ navigate }) {
                 <a
                   className="nav-link"
                   href="/our-services"
-                  style={{ color: setColor("/our-services") }}
+                  style={setColor("/our-services")}
                 >
                   Our Services
                 </a>
               </li>
+
               <li className="nav-item">
                 <a
                   className="nav-link"
                   href="/about-us"
-                  style={{
-                    color: "black",
-                  }}
+                  style={setColor("/about-us")}
                 >
                   About Us
                 </a>
               </li>
+
               <li className="nav-item">
                 <a
                   className="nav-link"
                   href="/payments"
-                  style={{ color: "black" }}
+                  style={setColor("/payments")}
                 >
                   Payments
                 </a>
