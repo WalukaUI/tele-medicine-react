@@ -1,9 +1,26 @@
 import "./_nav2.scss";
 
-export default function Nav2({ location, setWord }) {
+export default function Nav2({ location }) {
   function setColor(path) {
     if (location.pathname === path) {
-      return { color: "red", textDecoration: "underline" };
+      return {
+        color: "red",
+        borderBottomStyle: "solid",
+        paddingBottom: "5px",
+        width: "fit-content",
+      };
+    } else if (
+      path === "other" &&
+      (location.pathname === "/get-appointment" ||
+        location.pathname === "/patient-education" ||
+        location.pathname === "/emotional-health")
+    ) {
+      return {
+        color: "red",
+        borderBottomStyle: "solid",
+        paddingBottom: "5px",
+        width: "fit-content",
+      };
     }
     return { color: "black" };
   }
@@ -78,6 +95,7 @@ export default function Nav2({ location, setWord }) {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                   href="!#"
+                  style={setColor("other")}
                 >
                   Other
                 </a>

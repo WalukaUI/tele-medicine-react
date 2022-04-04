@@ -15,15 +15,14 @@ import Signup from "./Signup/Signup";
 import Nav2 from "./Nav2/Nav2.js";
 
 export default function Main() {
-  const [word, setWord] = useState("None");
   const location = useLocation();
 
   return (
     <>
-      <Nav2 location={location} setWord={setWord} />
+      <Nav2 location={location} />
       <Routes>
         <Route path="/" element={<ImageCarousel />} />
-        <Route path="/tele-medicine" element={<TeleMed word={word} />} />
+        <Route path="/tele-medicine" element={<TeleMed />} />
         <Route path="/our-services" element={<OurServices />} />
         <Route path="/emotional-health" element={<EmotionalHealth />} />
         <Route path="/patient-education" element={<PatientEdu />} />

@@ -1,11 +1,10 @@
 import "./_telemed.scss";
 import Telemed from "./telemed.jpg";
 
-export default function TeleMed({ word }) {
+export default function TeleMed() {
   return (
     <>
       <div className="telemedImage">
-        <h2>{word}</h2>
         <div className="row telemed">
           <div className="col col-md-6 col-sm-12 mx-auto" data-aos="fade-in">
             <div className="parent">
