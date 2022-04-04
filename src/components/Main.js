@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import ImageCarousel from "./Carousel/Carousel";
 import TeleMed from "./Telemedicine/TeleMed";
