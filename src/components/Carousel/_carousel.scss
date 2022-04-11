@@ -44,7 +44,8 @@
   color: antiquewhite;
 }
 @media only screen and (max-width: 600px) {
-  .sec1MainDiv {
+  .sec1MainDiv,
+  .sec2MainDiv {
     flex-direction: column;
     height: auto;
   }
