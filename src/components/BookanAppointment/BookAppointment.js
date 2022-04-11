@@ -1,13 +1,27 @@
+import { useState } from "react";
 import "./_bookappointment.scss";
 
 export default function BookanAppointment() {
+  const [patientForm, setPatientForm] = useState({});
+
+  function createPatientForm(e) {
+    e.preventDefault();
+    let finalForm = { ...patientForm, [e.target.name]: e.target.value };
+    setPatientForm(finalForm);
+  }
+
+  function patientFormSubmit(e) {
+    e.preventDefault();
+    console.log(patientForm);
+  }
+
   return (
     <>
       <div className="bookAppoint col">
         <h5>Create a New Appointment</h5>
         <p>Please fill out the form to make a new appointment.</p>
         <div className="appointmentformContainer mx-auto">
-          <form style={{ textAlign: "left" }}>
+          <form style={{ textAlign: "left" }} onSubmit={patientFormSubmit}>
             <div className="form-row row" data-aos="fade-up">
               <div className="form-group col-md-6">
                 <label>First Name</label>
@@ -16,6 +30,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   name="first_name"
                   placeholder="First Name"
+                  onChange={createPatientForm}
                   required
                 />
               </div>
@@ -26,6 +41,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   name="last_name"
                   placeholder="Last Name"
+                  onChange={createPatientForm}
                   required
                 />
               </div>
@@ -37,6 +53,7 @@ export default function BookanAppointment() {
                 className="form-control"
                 name="email"
                 placeholder="name@example.com"
+                onChange={createPatientForm}
                 required
               />
             </div>
@@ -49,6 +66,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   placeholder="123-456-7891"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                  onChange={createPatientForm}
                   required
                 />
                 <small style={{ color: "green" }}>Format: 123-456-7891</small>
@@ -61,6 +79,7 @@ export default function BookanAppointment() {
                 className="form-control"
                 name="address_line_1"
                 placeholder="1234 Main St"
+                onChange={createPatientForm}
                 required
               />
             </div>
@@ -71,6 +90,7 @@ export default function BookanAppointment() {
                 className="form-control"
                 name="address_line_2"
                 placeholder="Apartment, studio, or floor"
+                onChange={createPatientForm}
               />
             </div>
             <div className="form-row row" data-aos="fade-up">
@@ -80,12 +100,18 @@ export default function BookanAppointment() {
                   type="text"
                   className="form-control"
                   name="city"
+                  onChange={createPatientForm}
                   required
                 />
               </div>
               <div className="form-group col-md-4" data-aos="fade-up">
                 <label>State</label>
-                <select className="form-control" name="state" required>
+                <select
+                  className="form-control"
+                  name="state"
+                  onChange={createPatientForm}
+                  required
+                >
                   <option defaultValue>Choose...</option>
                   <option value="">N/A</option>
                   <option value="AK">Alaska</option>
@@ -145,9 +171,10 @@ export default function BookanAppointment() {
               <div className="form-group col-md-2" data-aos="fade-up">
                 <label>Zip</label>
                 <input
-                  type="text"
+                  type="zip"
                   className="form-control"
                   name="zip_code"
+                  onChange={createPatientForm}
                   required
                 />
               </div>
@@ -160,6 +187,7 @@ export default function BookanAppointment() {
                   className="form-check-input"
                   type="radio"
                   name="isforanadult"
+                  onChange={createPatientForm}
                   value="yes"
                 />
                 <label className="form-check-label" style={{ marginTop: "0" }}>
@@ -171,6 +199,7 @@ export default function BookanAppointment() {
                   className="form-check-input"
                   type="radio"
                   name="isforanadult"
+                  onChange={createPatientForm}
                   value="no"
                 />
                 <label className="form-check-label" style={{ marginTop: "0" }}>
@@ -186,6 +215,7 @@ export default function BookanAppointment() {
                   name="date_of_birth"
                   className="form-control"
                   pattern="[0-9]{2}"
+                  onChange={createPatientForm}
                   required
                 />
                 <small style={{ color: "green" }}>
@@ -203,6 +233,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   rows="5"
                   name="reason_for_visit"
+                  onChange={createPatientForm}
                   required
                 ></textarea>
               </div>
@@ -219,6 +250,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   rows="3"
                   name="allergies"
+                  onChange={createPatientForm}
                   required
                 ></textarea>
               </div>
@@ -234,6 +266,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   rows="3"
                   name="medications"
+                  onChange={createPatientForm}
                 ></textarea>
               </div>
             </div>
@@ -246,6 +279,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   rows="3"
                   name="past_medical_history"
+                  onChange={createPatientForm}
                 ></textarea>
               </div>
             </div>
@@ -256,6 +290,7 @@ export default function BookanAppointment() {
                   className="form-control"
                   rows="2"
                   name="past_surgical_history"
+                  onChange={createPatientForm}
                 ></textarea>
               </div>
             </div>
@@ -269,6 +304,7 @@ export default function BookanAppointment() {
                 className="form-control"
                 name="phamercy_address_line_1"
                 placeholder="1234 Main St"
+                onChange={createPatientForm}
               />
             </div>
             <div className="form-group" data-aos="fade-up">
@@ -278,6 +314,7 @@ export default function BookanAppointment() {
                 className="form-control"
                 name="phamercy_address_line_2"
                 placeholder="Building Number or floor Number"
+                onChange={createPatientForm}
               />
             </div>
             <div className="form-row row" data-aos="fade-up">
@@ -287,11 +324,16 @@ export default function BookanAppointment() {
                   type="text"
                   className="form-control"
                   name="city_of_phamercy"
+                  onChange={createPatientForm}
                 />
               </div>
               <div className="form-group col-md-4">
                 <label>State</label>
-                <select name="state_of_phamercy" className="form-control">
+                <select
+                  name="state_of_phamercy"
+                  className="form-control"
+                  onChange={createPatientForm}
+                >
                   <option defaultValue>Choose...</option>
                   <option value="">N/A</option>
                   <option value="AK">Alaska</option>
@@ -354,6 +396,7 @@ export default function BookanAppointment() {
                   type="text"
                   className="form-control"
                   name="zipcode_of_phamercy"
+                  onChange={createPatientForm}
                 />
               </div>
             </div>
@@ -362,7 +405,12 @@ export default function BookanAppointment() {
               How would you like to pay for this service?
             </label>
             <div className="form-group col-md-5" data-aos="fade-up">
-              <select name="payment_methord" className="form-control">
+              <select
+                name="payment_methord"
+                className="form-control"
+                onChange={createPatientForm}
+                required
+              >
                 <option defaultValue>Choose...</option>
                 <option value="cashapp">CashApp</option>
                 <option value="zelle">Zelle</option>
@@ -377,6 +425,8 @@ export default function BookanAppointment() {
                   className="form-control"
                   placeholder="123-456-7891"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                  onChange={createPatientForm}
+                  required
                 />
                 <small style={{ color: "green" }}>Format: 123-456-7891</small>
               </div>

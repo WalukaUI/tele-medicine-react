@@ -3,17 +3,17 @@ import { Form, Button } from "react-bootstrap";
 import { useState } from "react";
 
 export default function Signup() {
-  const [reportForm, setReportForm] = useState({});
+  const [signupForm, setSignupForm] = useState({});
 
-  function patientReport(e) {
+  function memberSignup(e) {
     e.preventDefault();
-    let newForm = { ...reportForm, [e.target.name]: e.target.value };
-    setReportForm(newForm);
+    let newForm = { ...signupForm, [e.target.name]: e.target.value };
+    setSignupForm(newForm);
   }
 
-  function handleSubmit(e) {
+  function handleSubmitSignup(e) {
     e.preventDefault();
-    console.log(reportForm);
+    console.log(signupForm);
   }
 
   return (
@@ -23,7 +23,7 @@ export default function Signup() {
         <p>Please fill below form to create a new account</p>
         <div className="formContainer">
           <div className="signupForm text-center mx-auto">
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmitSignup}>
               <div className="col">
                 <Form.Group className="mb-3">
                   <Form.Label>First Name</Form.Label>
@@ -31,7 +31,7 @@ export default function Signup() {
                     type="text"
                     placeholder="First Name"
                     name="first_name"
-                    onChange={patientReport}
+                    onChange={memberSignup}
                     required
                   />
                 </Form.Group>
@@ -41,7 +41,7 @@ export default function Signup() {
                     type="text"
                     placeholder="Last Name"
                     name="last_name"
-                    onChange={patientReport}
+                    onChange={memberSignup}
                     required
                   />
                 </Form.Group>
@@ -52,7 +52,7 @@ export default function Signup() {
                   type="email"
                   placeholder="Your email address"
                   name="email"
-                  onChange={patientReport}
+                  onChange={memberSignup}
                   required
                 />
               </Form.Group>
@@ -66,7 +66,7 @@ export default function Signup() {
                   autoComplete="on"
                   maxLength="50"
                   minLength="3"
-                  onChange={patientReport}
+                  onChange={memberSignup}
                   required
                 />
               </Form.Group>
@@ -79,7 +79,7 @@ export default function Signup() {
                   autoComplete="on"
                   maxLength="50"
                   minLength="3"
-                  onChange={patientReport}
+                  onChange={memberSignup}
                   required
                 />
               </Form.Group>
