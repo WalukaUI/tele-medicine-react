@@ -33,6 +33,7 @@ export default function Login({ login }) {
                   placeholder="Enter email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
               </Form.Group>
 
@@ -43,6 +44,7 @@ export default function Login({ login }) {
                   placeholder="Password"
                   value={secretWord}
                   onChange={(e) => setSecretord(e.target.value)}
+                  required
                 />
               </Form.Group>
               <Button variant="primary" type="submit">

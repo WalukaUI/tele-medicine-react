@@ -32,6 +32,7 @@ export default function Signup() {
                     placeholder="First Name"
                     name="first_name"
                     onChange={patientReport}
+                    required
                   />
                 </Form.Group>
                 <Form.Group className="mb-3">
@@ -41,6 +42,7 @@ export default function Signup() {
                     placeholder="Last Name"
                     name="last_name"
                     onChange={patientReport}
+                    required
                   />
                 </Form.Group>
               </div>
@@ -51,6 +53,7 @@ export default function Signup() {
                   placeholder="Your email address"
                   name="email"
                   onChange={patientReport}
+                  required
                 />
               </Form.Group>
 
@@ -60,16 +63,24 @@ export default function Signup() {
                   type="password"
                   placeholder="Password"
                   name="password"
+                  autoComplete="on"
+                  maxLength="50"
+                  minLength="3"
                   onChange={patientReport}
+                  required
                 />
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Confirm your Password</Form.Label>
                 <Form.Control
-                  type="passwordconfirmation"
+                  type="password"
                   placeholder="Password Confirmation"
                   name="password_confirmation"
+                  autoComplete="on"
+                  maxLength="50"
+                  minLength="3"
                   onChange={patientReport}
+                  required
                 />
               </Form.Group>
               <Button variant="primary" type="submit">
