@@ -1,7 +1,17 @@
 import "./_login.scss";
 import { Nav, Form, Button } from "react-bootstrap";
+import { useState } from "react";
 
-export default function Login() {
+export default function Login({ login }) {
+  const [email, setEmail] = useState("");
+  const [secretWord, setSecretord] = useState("");
+
+  function callLogin(e) {
+    e.preventDefault();
+    login({ email: email, password: secretWord });
+    console.log(email, secretWord);
+  }
+
   return (
     <>
       <div className="loginImage col" data-aos="fade-in">
@@ -15,15 +25,25 @@ export default function Login() {
         <p>Please Login to Update your appointments or profile details</p>
         <div className="formContainer">
           <div className="loginForm text-center mx-auto">
-            <Form>
+            <Form onSubmit={callLogin}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Control
+                  type="email"
+                  placeholder="Enter email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Control
+                  type="password"
+                  placeholder="Password"
+                  value={secretWord}
+                  onChange={(e) => setSecretord(e.target.value)}
+                />
               </Form.Group>
               <Button variant="primary" type="submit">
                 Submit
