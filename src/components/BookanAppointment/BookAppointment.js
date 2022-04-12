@@ -25,7 +25,6 @@ export default function BookanAppointment() {
     e.preventDefault();
     console.log(patientForm);
   }
-
   return (
     <>
       <div className="bookAppoint col">
@@ -39,7 +38,7 @@ export default function BookanAppointment() {
                   filledPercentage !== 100
                     ? filledPercentage < 50
                       ? "red"
-                      : "orange"
+                      : "#E36358"
                     : "green",
               }}
             >
