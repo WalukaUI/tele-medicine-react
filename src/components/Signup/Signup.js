@@ -4,11 +4,16 @@ import { useState } from "react";
 
 export default function Signup() {
   const [signupForm, setSignupForm] = useState({});
+  const [filled, setFilled] = useState(0);
 
   function memberSignup(e) {
     e.preventDefault();
     let newForm = { ...signupForm, [e.target.name]: e.target.value };
     setSignupForm(newForm);
+    var size = Object.values(signupForm);
+    let filterValues = size.filter((e) => e !== "");
+    let summ = filterValues.length * 20;
+    setFilled(summ);
   }
 
   function handleSubmitSignup(e) {
@@ -23,6 +28,9 @@ export default function Signup() {
         <p>Please fill below form to create a new account</p>
         <div className="formContainer">
           <div className="signupForm text-center mx-auto">
+            <h4 style={{ color: filled !== 100 ? "red" : "green" }}>
+              {filled}% Completed
+            </h4>
             <Form onSubmit={handleSubmitSignup}>
               <div className="col">
                 <Form.Group className="mb-3">
@@ -83,9 +91,15 @@ export default function Signup() {
                   required
                 />
               </Form.Group>
-              <Button variant="primary" type="submit">
-                Submit
-              </Button>
+              {filled !== 100 ? (
+                <Button variant="primary" type="submit" disabled>
+                  Submit
+                </Button>
+              ) : (
+                <Button variant="primary" type="submit">
+                  Submit
+                </Button>
+              )}
             </Form>
           </div>
         </div>
