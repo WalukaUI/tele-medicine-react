@@ -30,6 +30,14 @@
   background-color: rgb(199, 209, 209);
   padding: 20px;
 }
+.progressBar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(162, 191, 162);
+}
 
 @media only screen and (max-width: 600px) {
   .appointmentformContainer {

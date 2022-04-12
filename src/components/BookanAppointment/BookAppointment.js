@@ -3,11 +3,22 @@ import "./_bookappointment.scss";
 
 export default function BookanAppointment() {
   const [patientForm, setPatientForm] = useState({});
+  const [filledPercentage, setFilledPercentage] = useState(0);
 
   function createPatientForm(e) {
     e.preventDefault();
     let finalForm = { ...patientForm, [e.target.name]: e.target.value };
     setPatientForm(finalForm);
+    var objSize = Object.entries(finalForm);
+    let filteredValues = objSize.filter(
+      (e) =>
+        e[1] !== "" &&
+        e[0] !== "address_line_2" &&
+        e[0] !== "phamercy_address_line_2" &&
+        e[0] !== "past_surgical_history"
+    );
+    let sumofFiileLines = filteredValues.length * 5;
+    setFilledPercentage(sumofFiileLines);
   }
 
   function patientFormSubmit(e) {
@@ -18,6 +29,20 @@ export default function BookanAppointment() {
   return (
     <>
       <div className="bookAppoint col">
+        <div className="progressBar">
+          <h4
+            style={{
+              color:
+                filledPercentage !== 100
+                  ? filledPercentage < 50
+                    ? "red"
+                    : "orange"
+                  : "green",
+            }}
+          >
+            {filledPercentage}% Completed
+          </h4>
+        </div>
         <h5>Create a New Appointment</h5>
         <p>Please fill out the form to make a new appointment.</p>
         <div className="appointmentformContainer mx-auto">

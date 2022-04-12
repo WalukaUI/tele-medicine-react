@@ -28,7 +28,12 @@ export default function Signup() {
         <p>Please fill below form to create a new account</p>
         <div className="formContainer">
           <div className="signupForm text-center mx-auto">
-            <h4 style={{ color: filled !== 100 ? "red" : "green" }}>
+            <h4
+              style={{
+                color:
+                  filled !== 100 ? (filled < 50 ? "red" : "orange") : "green",
+              }}
+            >
               {filled}% Completed
             </h4>
             <Form onSubmit={handleSubmitSignup}>
