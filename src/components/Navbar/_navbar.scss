@@ -1,51 +1,26 @@
-// /* Navigation bar */
-
-// .navbar {
-//   padding-left: 4rem;
-//   padding-right: 4rem;
-//   background: rgba(140, 203, 190, 0.3) !important;
-//   a {
-//     &:hover {
-//       text-decoration: underline;
-//     }
-//   }
-//   .textColor {
-//     color: black;
-//   }
-// }
-
-// .appointmentbtn {
-//   box-shadow: 0px 10px 14px -7px #276873;
-//   background: linear-gradient(to bottom, #399ba8 5%, #3eb5c7 100%);
-//   background-color: #399ba8;
-//   border-radius: 8px;
-//   display: inline-block;
-//   cursor: pointer;
-//   color: #ffffff;
-//   font-family: Arial;
-//   font-size: 1rem;
-//   padding: 13px 32px;
-//   text-decoration: none;
-//   text-shadow: 0px 1px 0px #3d768a;
-//   margin-left: 50px;
-//   &:hover {
-//     background: linear-gradient(to bottom, #3eb5c7 5%, #399ba8 100%);
-//     background-color: #3eb5c7;
-//   }
-// }
-// .loginBtn {
-//   margin-left: 10px;
-// }
-// @media only screen and (max-width: 900px) {
-//   .appointmentbtn {
-//     margin-left: 0;
-//   }
-//   .loginBtn {
-//     margin-left: 0;
-//     margin-top: 10px;
-//   }
-//   .navbar {
-//     padding-left: 1rem;
-//     padding-right: 1rem;
-//   }
-// }
+.navbar {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background: rgba(140, 203, 190, 0.3) !important;
+  min-height: 20vh;
+  a {
+    &:hover {
+      text-decoration: underline;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+  }
+  .textColor {
+    color: black;
+  }
+  button {
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-height: auto;
+  }
+}

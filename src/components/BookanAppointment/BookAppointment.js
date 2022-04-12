@@ -30,20 +30,23 @@ export default function BookanAppointment() {
     <>
       <div className="bookAppoint col">
         <div className="progressBar">
-          <h4
-            style={{
-              color:
-                filledPercentage !== 100
-                  ? filledPercentage < 50
-                    ? "red"
-                    : "orange"
-                  : "green",
-            }}
-          >
-            {filledPercentage}% Completed
-          </h4>
+          {filledPercentage === 0 ? (
+            <h5>Create a New Appointment</h5>
+          ) : (
+            <h4
+              style={{
+                color:
+                  filledPercentage !== 100
+                    ? filledPercentage < 50
+                      ? "red"
+                      : "orange"
+                    : "green",
+              }}
+            >
+              {filledPercentage}% Completed
+            </h4>
+          )}
         </div>
-        <h5>Create a New Appointment</h5>
         <p>Please fill out the form to make a new appointment.</p>
         <div className="appointmentformContainer mx-auto">
           <form style={{ textAlign: "left" }} onSubmit={patientFormSubmit}>

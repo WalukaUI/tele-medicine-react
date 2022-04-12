@@ -12,14 +12,14 @@ import Login from "./Login/Login";
 import BookanAppointment from "./BookanAppointment/BookAppointment";
 import Payments from "./Payments/Payments";
 import Signup from "./Signup/Signup";
-import Nav2 from "./Nav2/Nav2.js";
+import NavBar from "./Navbar/NavBar.js";
 
 export default function Main() {
   const location = useLocation();
 
   return (
     <>
-      <Nav2 location={location} />
+      <NavBar location={location} />
       <Routes>
         <Route path="/" element={<ImageCarousel />} />
         <Route path="/tele-medicine" element={<TeleMed />} />
