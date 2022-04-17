@@ -32,18 +32,25 @@ export default function BookanAppointment() {
           {filledPercentage === 0 ? (
             <h5>Create a New Appointment</h5>
           ) : (
-            <h4
-              style={{
-                color:
-                  filledPercentage !== 100
-                    ? filledPercentage < 50
-                      ? "red"
-                      : "#E36358"
-                    : "green",
-              }}
-            >
-              {filledPercentage}% Completed
-            </h4>
+            <div>
+              <h4
+                style={{
+                  color:
+                    filledPercentage !== 100
+                      ? filledPercentage < 50
+                        ? "red"
+                        : "#E36358"
+                      : "green",
+                }}
+              >
+                {filledPercentage}% Completed
+              </h4>
+              {filledPercentage === 100 ? (
+                <h4>Please Click Submit Button</h4>
+              ) : (
+                ""
+              )}
+            </div>
           )}
         </div>
         <p>Please fill out the form to make a new appointment.</p>
@@ -473,12 +480,8 @@ export default function BookanAppointment() {
               />
             </div>
 
-            <hr data-aos="fade-up" />
-            <button
-              type="submit"
-              className="btn btn-primary"
-              data-aos="fade-up"
-            >
+            <hr />
+            <button type="submit" className="btn btn-primary">
               Submit
             </button>
           </form>
