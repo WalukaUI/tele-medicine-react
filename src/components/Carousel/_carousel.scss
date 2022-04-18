@@ -1,5 +1,21 @@
 @import "../variables";
-
+.parentc {
+  position: relative;
+  height: auto;
+}
+.carouselLayers {
+  opacity: 1;
+  z-index: 2;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(167, 207, 223, 0) 0%,
+    #bbe0da 100%
+  );
+}
 .carousel {
   min-width: 100%;
   max-height: 100vh;

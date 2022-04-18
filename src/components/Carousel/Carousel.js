@@ -9,42 +9,55 @@ export default function ImageCarousel() {
     <>
       <Carousel fade>
         <Carousel.Item className="carousel-item">
-          <img
-            className="d-block carousel"
-            src="./Carousel/1.jpg"
-            alt="First slide"
-          />
-
-          <Carousel.Caption className="caption cap1 cap11">
-            <h3>First slide labelll</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
+          <div className="parents">
+            <img
+              className="d-block carousel"
+              src="./Carousel/1.jpg"
+              alt="First slide"
+            />
+            <div className="carouselLayers">
+              <Carousel.Caption className="caption cap1 cap11">
+                <h3>First slide labelll</h3>
+                <p>
+                  Nulla vitae elit libero, a pharetra augue mollis interdum.
+                </p>
+              </Carousel.Caption>
+            </div>
+          </div>
         </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block carousel"
-            src="./Carousel/2.jpg"
-            alt="Second slide"
-          />
-
-          <Carousel.Caption className="caption cap2">
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
+        <Carousel.Item className="carousel-item">
+          <div className="parents">
+            <img
+              className="d-block carousel"
+              src="./Carousel/2.jpg"
+              alt="First slide"
+            />
+            <div className="carouselLayers">
+              <Carousel.Caption className="caption cap2">
+                <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </Carousel.Caption>
+            </div>
+          </div>
         </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block carousel"
-            src="./Carousel/3.jpg"
-            alt="Third slide"
-          />
 
-          <Carousel.Caption className="caption cap3">
-            <h3>Third slide labegggl</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
+        <Carousel.Item className="carousel-item">
+          <div className="parents">
+            <img
+              className="d-block carousel"
+              src="./Carousel/3.jpg"
+              alt="First slide"
+            />
+            <div className="carouselLayers">
+              <Carousel.Caption className="caption cap3">
+                <h3>Third slide labegggl</h3>
+                <p>
+                  Praesent commodo cursus magna, vel scelerisque nisl
+                  consectetur.
+                </p>
+              </Carousel.Caption>
+            </div>
+          </div>
         </Carousel.Item>
       </Carousel>
       <div className="separator" data-aos="fade-in"></div>
