@@ -21,6 +21,15 @@ export default function Signup() {
     console.log(signupForm);
   }
 
+  function validateInput(e) {
+    e.preventDefault();
+    let allInputs = document.querySelectorAll(".inputLine");
+    for (let i = 0; i < allInputs.length; i++) {}
+    allInputs.addEventListener("input", (r) => {
+      memberSignup(r.target.value);
+    });
+  }
+
   return (
     <>
       <div className="singnupImage col" data-aos="fade-in">
@@ -44,7 +53,7 @@ export default function Signup() {
                     type="text"
                     placeholder="First Name"
                     name="first_name"
-                    onChange={memberSignup}
+                    onChange={validateInput}
                     required
                   />
                 </Form.Group>
@@ -54,7 +63,7 @@ export default function Signup() {
                     type="text"
                     placeholder="Last Name"
                     name="last_name"
-                    onChange={memberSignup}
+                    onChange={validateInput}
                     required
                   />
                 </Form.Group>
@@ -65,7 +74,7 @@ export default function Signup() {
                   type="email"
                   placeholder="Your email address"
                   name="email"
-                  onChange={memberSignup}
+                  onChange={validateInput}
                   required
                 />
               </Form.Group>
@@ -79,7 +88,7 @@ export default function Signup() {
                   autoComplete="on"
                   maxLength="50"
                   minLength="3"
-                  onChange={memberSignup}
+                  onChange={validateInput}
                   required
                 />
               </Form.Group>
@@ -92,7 +101,7 @@ export default function Signup() {
                   autoComplete="on"
                   maxLength="50"
                   minLength="3"
-                  onChange={memberSignup}
+                  onChange={validateInput}
                   required
                 />
               </Form.Group>
