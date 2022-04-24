@@ -26,7 +26,9 @@ export default function Signup() {
     let allInputs = document.querySelectorAll(".inputLine");
     for (let i = 0; i < allInputs.length; i++) {}
     allInputs.addEventListener("input", (r) => {
-      memberSignup(r.target.value);
+      if (r.target.name === "email") {
+        memberSignup(r.target.value);
+      }
     });
   }
 
@@ -50,6 +52,7 @@ export default function Signup() {
                 <Form.Group className="mb-3">
                   <Form.Label>First Name</Form.Label>
                   <Form.Control
+                    className="inputLine"
                     type="text"
                     placeholder="First Name"
                     name="first_name"
@@ -60,6 +63,7 @@ export default function Signup() {
                 <Form.Group className="mb-3">
                   <Form.Label>Last Name</Form.Label>
                   <Form.Control
+                    className="inputLine"
                     type="text"
                     placeholder="Last Name"
                     name="last_name"
@@ -71,6 +75,7 @@ export default function Signup() {
               <Form.Group className="mb-3">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control
+                  className="inputLine"
                   type="email"
                   placeholder="Your email address"
                   name="email"
@@ -82,6 +87,7 @@ export default function Signup() {
               <Form.Group className="mb-3">
                 <Form.Label>Password</Form.Label>
                 <Form.Control
+                  className="inputLine"
                   type="password"
                   placeholder="Password"
                   name="password"
@@ -95,6 +101,7 @@ export default function Signup() {
               <Form.Group className="mb-3">
                 <Form.Label>Confirm your Password</Form.Label>
                 <Form.Control
+                  className="inputLine"
                   type="password"
                   placeholder="Password Confirmation"
                   name="password_confirmation"
