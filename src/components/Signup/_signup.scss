@@ -16,9 +16,47 @@
   margin-top: 2rem;
   width: 30%;
 }
+
 @media only screen and (max-width: 800px) {
   .signupForm {
     margin-top: 2rem;
     width: 85%;
   }
+}
+
+.inputDivd {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100% !important;
+  border-radius: 5px;
+  align-items: center;
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+}
+.inputs {
+  border: none;
+  width: 80%;
+  border-radius: 5px;
+  height: 3rem;
+  margin-left: 10px;
+}
+.spans {
+  position: absolute;
+  right: 0;
+  width: 10%;
+  height: 70%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.valid {
+  background-image: url(../../../public/FormImages/valid.png);
+}
+.invalid {
+  background-image: url(../../../public/FormImages/invalid.png);
 }

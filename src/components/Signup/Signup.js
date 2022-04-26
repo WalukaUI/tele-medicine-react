@@ -33,12 +33,13 @@ export default function Signup() {
 
   function sucess(e, id) {
     memberSignup(e);
-    document.getElementById(id).textContent = "✔";
-    document.getElementById(id).style.color = "#13ec24";
+    document.getElementById(id).classList.remove("invalid");
+    document.getElementById(id).classList.add("valid");
   }
 
   function unsucess(id) {
-    document.getElementById(id).textContent = "";
+    document.getElementById(id).classList.remove("valid");
+    document.getElementById(id).classList.add("invalid");
   }
 
   var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
@@ -97,18 +98,24 @@ export default function Signup() {
               {filled}% Completed
             </h4>
             <Form onSubmit={handleSubmitSignup}>
+              <div className="inputDivd">
+                <input className="inputs"></input>
+                <span className="spans"></span>
+              </div>
               <div className="col">
                 <Form.Group className="mb-3">
                   <Form.Label>First Name</Form.Label>
-                  <Form.Control
-                    className="inputLine"
-                    type="text"
-                    placeholder="First Name"
-                    name="first_name"
-                    onChange={validateInput}
-                    required
-                  />
-                  <small id="fname"></small>
+                  <div className="inputDivd">
+                    <input
+                      className="inputs inputLine"
+                      type="text"
+                      placeholder="First Name"
+                      name="first_name"
+                      onChange={validateInput}
+                      required
+                    />
+                    <span className="spans" id="fname"></span>
+                  </div>
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Label>Last Name</Form.Label>
