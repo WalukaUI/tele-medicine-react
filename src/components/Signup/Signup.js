@@ -98,16 +98,12 @@ export default function Signup() {
               {filled}% Completed
             </h4>
             <Form onSubmit={handleSubmitSignup}>
-              <div className="inputDivd">
-                <input className="inputs"></input>
-                <span className="spans"></span>
-              </div>
               <div className="col">
                 <Form.Group className="mb-3">
                   <Form.Label>First Name</Form.Label>
                   <div className="inputDivd">
                     <input
-                      className="inputs inputLine"
+                      className="inputLine"
                       type="text"
                       placeholder="First Name"
                       name="first_name"
@@ -119,60 +115,68 @@ export default function Signup() {
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Label>Last Name</Form.Label>
-                  <Form.Control
-                    className="inputLine"
-                    type="text"
-                    placeholder="Last Name"
-                    name="last_name"
-                    onChange={validateInput}
-                    required
-                  />
-                  <small id="lname"></small>
+                  <div className="inputDivd">
+                    <input
+                      className="inputLine"
+                      type="text"
+                      placeholder="Last Name"
+                      name="last_name"
+                      onChange={validateInput}
+                      required
+                    />
+                    <span className="spans" id="lname"></span>
+                  </div>
                 </Form.Group>
               </div>
               <Form.Group className="mb-3">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control
-                  className="inputLine"
-                  type="email"
-                  placeholder="Your email address"
-                  name="email"
-                  onChange={validateInput}
-                  required
-                />
-                <small id="emails"></small>
+                <div className="inputDivd">
+                  <input
+                    className="inputLine"
+                    type="email"
+                    placeholder="Your email address"
+                    name="email"
+                    onChange={validateInput}
+                    required
+                  />
+                  <span className="spans" id="emails"></span>
+                </div>
               </Form.Group>
 
               <Form.Group className="mb-3">
                 <Form.Label>Password</Form.Label>
-                <Form.Control
-                  className="inputLine"
-                  type="password"
-                  placeholder="Password"
-                  id="pwvalue"
-                  name="password"
-                  autoComplete="on"
-                  maxLength="50"
-                  minLength="3"
-                  onChange={validateInput}
-                  required
-                />
-                <small id="pword"></small>
+                <div className="inputDivd">
+                  <input
+                    className="inputLine"
+                    type="password"
+                    placeholder="Password"
+                    id="pwvalue"
+                    name="password"
+                    autoComplete="on"
+                    maxLength="50"
+                    minLength="3"
+                    onChange={validateInput}
+                    required
+                  />
+                  <span className="spans" id="pword"></span>
+                </div>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Confirm your Password</Form.Label>
-                <Form.Control
-                  className="inputLine"
-                  type="password"
-                  placeholder="Password Confirmation"
-                  name="password_confirmation"
-                  autoComplete="on"
-                  maxLength="50"
-                  minLength="3"
-                  onChange={validateInput}
-                  required
-                />
-                <small id="confirmpword"></small>
+                <div className="inputDivd">
+                  <input
+                    className="inputLine"
+                    type="password"
+                    placeholder="Password Confirmation"
+                    name="password_confirmation"
+                    autoComplete="on"
+                    maxLength="50"
+                    minLength="3"
+                    onChange={validateInput}
+                    required
+                  />
+                  <span className="spans" id="confirmpword"></span>
+                </div>
               </Form.Group>
               {filled !== 100 ? (
                 <Button variant="primary" type="submit" disabled>
