@@ -42,7 +42,7 @@ export default function Signup() {
     document.getElementById(id).classList.add("invalid");
   }
 
-  var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+  var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/; // eslint-disable-line
 
   function validateInput(e) {
     e.preventDefault();
