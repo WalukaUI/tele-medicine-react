@@ -1,5 +1,5 @@
 import "./_signup.scss";
-import { Form, Button } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { useState } from "react";
 
 export default function Signup() {
@@ -97,87 +97,81 @@ export default function Signup() {
             >
               {filled}% Completed
             </h4>
-            <Form onSubmit={handleSubmitSignup}>
+            <form onSubmit={handleSubmitSignup}>
               <div className="col">
-                <Form.Group className="mb-3">
-                  <Form.Label>First Name</Form.Label>
-                  <div className="inputDivd">
-                    <input
-                      className="inputLine"
-                      type="text"
-                      placeholder="First Name"
-                      name="first_name"
-                      onChange={validateInput}
-                      required
-                    />
-                    <span className="spans" id="fname"></span>
-                  </div>
-                </Form.Group>
-                <Form.Group className="mb-3">
-                  <Form.Label>Last Name</Form.Label>
-                  <div className="inputDivd">
-                    <input
-                      className="inputLine"
-                      type="text"
-                      placeholder="Last Name"
-                      name="last_name"
-                      onChange={validateInput}
-                      required
-                    />
-                    <span className="spans" id="lname"></span>
-                  </div>
-                </Form.Group>
-              </div>
-              <Form.Group className="mb-3">
-                <Form.Label>Email address</Form.Label>
+                <label>First Name</label>
                 <div className="inputDivd">
                   <input
                     className="inputLine"
-                    type="email"
-                    placeholder="Your email address"
-                    name="email"
+                    type="text"
+                    placeholder="First Name"
+                    name="first_name"
                     onChange={validateInput}
                     required
                   />
-                  <span className="spans" id="emails"></span>
+                  <span className="spans" id="fname"></span>
                 </div>
-              </Form.Group>
 
-              <Form.Group className="mb-3">
-                <Form.Label>Password</Form.Label>
+                <label>Last Name</label>
                 <div className="inputDivd">
                   <input
                     className="inputLine"
-                    type="password"
-                    placeholder="Password"
-                    id="pwvalue"
-                    name="password"
-                    autoComplete="on"
-                    maxLength="50"
-                    minLength="3"
+                    type="text"
+                    placeholder="Last Name"
+                    name="last_name"
                     onChange={validateInput}
                     required
                   />
-                  <span className="spans" id="pword"></span>
+                  <span className="spans" id="lname"></span>
                 </div>
-              </Form.Group>
-              <Form.Group className="mb-3">
-                <Form.Label>Confirm your Password</Form.Label>
-                <div className="inputDivd">
-                  <input
-                    className="inputLine"
-                    type="password"
-                    placeholder="Password Confirmation"
-                    name="password_confirmation"
-                    autoComplete="on"
-                    maxLength="50"
-                    minLength="3"
-                    onChange={validateInput}
-                    required
-                  />
-                  <span className="spans" id="confirmpword"></span>
-                </div>
-              </Form.Group>
+              </div>
+
+              <label>Email address</label>
+              <div className="inputDivd">
+                <input
+                  className="inputLine"
+                  type="email"
+                  placeholder="Your email address"
+                  name="email"
+                  onChange={validateInput}
+                  required
+                />
+                <span className="spans" id="emails"></span>
+              </div>
+
+              <label>Password</label>
+              <div className="inputDivd">
+                <input
+                  className="inputLine"
+                  type="password"
+                  placeholder="Password"
+                  id="pwvalue"
+                  name="password"
+                  autoComplete="on"
+                  maxLength="50"
+                  minLength="3"
+                  onChange={validateInput}
+                  required
+                />
+                <span className="spans" id="pword"></span>
+              </div>
+
+              <label>Confirm your Password</label>
+              <div className="inputDivd">
+                <input
+                  className="inputLine"
+                  type="password"
+                  placeholder="Password Confirmation"
+                  name="password_confirmation"
+                  autoComplete="on"
+                  maxLength="50"
+                  minLength="3"
+                  onChange={validateInput}
+                  required
+                />
+                <span className="spans" id="confirmpword"></span>
+              </div>
+
               {filled !== 100 ? (
                 <Button variant="primary" type="submit" disabled>
                   Submit
@@ -187,7 +181,7 @@ export default function Signup() {
                   Submit
                 </Button>
               )}
-            </Form>
+            </form>
           </div>
         </div>
         <div className="attribute">
