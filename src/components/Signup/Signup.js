@@ -21,15 +21,68 @@ export default function Signup() {
     console.log(signupForm);
   }
 
+  //form validation----------------------------------------------------------
+
+  function requiredField() {
+    prompt("Please Enter a Valied email Address");
+  }
+
+  const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
+  function sucess(e, id) {
+    memberSignup(e);
+    document.getElementById(id).textContent = "✔";
+    document.getElementById(id).style.color = "#13ec24";
+  }
+
+  function unsucess(id) {
+    document.getElementById(id).textContent = "";
+  }
+
+  var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+
   function validateInput(e) {
     e.preventDefault();
     let allInputs = document.querySelectorAll(".inputLine");
-    for (let i = 0; i < allInputs.length; i++) {}
-    allInputs.addEventListener("input", (r) => {
-      if (r.target.name === "email") {
-        memberSignup(r.target.value);
-      }
-    });
+    for (let i = 0; i < allInputs.length; i++) {
+      allInputs[i].addEventListener("input", (r) => {
+        let inputString = r.target.value;
+        let inputName = r.target.name;
+
+        if (inputName === "email") {
+          if (r.target.checkValidity() && validateEmail(inputString)) {
+            sucess(e, "emails");
+          } else {
+            unsucess("emails");
+          }
+        } else if (inputName === "first_name" || inputName === "last_name") {
+          if (r.target.checkValidity()) {
+            sucess(e, inputName === "first_name" ? "fname" : "lname");
+          } else {
+            unsucess(inputName === "first_name" ? "fname" : "lname");
+          }
+        } else if (inputName === "password") {
+          if (format.test(inputString) === true && inputString.length > 8) {
+            sucess(e, "pword");
+          } else {
+            unsucess("pword");
+          }
+        } else if (inputName === "password_confirmation") {
+          let pwvalue = document.getElementById("pwvalue");
+          if (pwvalue.value === inputString) {
+            sucess(e, "confirmpword");
+          } else {
+            unsucess("confirmpword");
+          }
+        }
+      });
+    }
   }
 
   return (
@@ -59,6 +112,7 @@ export default function Signup() {
                     onChange={validateInput}
                     required
                   />
+                  <small id="fname"></small>
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Label>Last Name</Form.Label>
@@ -70,6 +124,7 @@ export default function Signup() {
                     onChange={validateInput}
                     required
                   />
+                  <small id="lname"></small>
                 </Form.Group>
               </div>
               <Form.Group className="mb-3">
@@ -82,6 +137,7 @@ export default function Signup() {
                   onChange={validateInput}
                   required
                 />
+                <small id="emails"></small>
               </Form.Group>
 
               <Form.Group className="mb-3">
@@ -90,6 +146,7 @@ export default function Signup() {
                   className="inputLine"
                   type="password"
                   placeholder="Password"
+                  id="pwvalue"
                   name="password"
                   autoComplete="on"
                   maxLength="50"
@@ -97,6 +154,7 @@ export default function Signup() {
                   onChange={validateInput}
                   required
                 />
+                <small id="pword"></small>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Confirm your Password</Form.Label>
@@ -111,6 +169,7 @@ export default function Signup() {
                   onChange={validateInput}
                   required
                 />
+                <small id="confirmpword"></small>
               </Form.Group>
               {filled !== 100 ? (
                 <Button variant="primary" type="submit" disabled>
