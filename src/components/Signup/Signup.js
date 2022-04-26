@@ -23,10 +23,6 @@ export default function Signup() {
 
   //form validation----------------------------------------------------------
 
-  function requiredField() {
-    prompt("Please Enter a Valied email Address");
-  }
-
   const validateEmail = (email) => {
     return String(email)
       .toLowerCase()
@@ -75,7 +71,7 @@ export default function Signup() {
           }
         } else if (inputName === "password_confirmation") {
           let pwvalue = document.getElementById("pwvalue");
-          if (pwvalue.value === inputString) {
+          if (pwvalue.value === inputString && inputString.length > 0) {
             sucess(e, "confirmpword");
           } else {
             unsucess("confirmpword");
