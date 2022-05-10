@@ -64,8 +64,11 @@ export default function Signup() {
           } else {
             unsucess(inputName === "first_name" ? "fname" : "lname");
           }
-        } else if (inputName === "password") {
-          if (format.test(inputString) === true && inputString.length > 8) {
+        } else if (
+          format.test(inputString) === true &&
+          inputName === "password"
+        ) {
+          if (inputString.length > 8) {
             sucess(e, "pword");
           } else {
             unsucess("pword");
@@ -171,16 +174,9 @@ export default function Signup() {
                 />
                 <span className="spans" id="confirmpword"></span>
               </div>
-
-              {filled !== 100 ? (
-                <Button variant="primary" type="submit" disabled>
-                  Submit
-                </Button>
-              ) : (
-                <Button variant="primary" type="submit">
-                  Submit
-                </Button>
-              )}
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
             </form>
           </div>
         </div>

@@ -31,21 +31,28 @@ export default function TeleMed() {
             className="col col-md-6 col-sm-12mx-auto teleMedList"
             data-aos="fade-in"
           >
-            <h6>
+            <h5 style={{ lineHeight: "2rem" }}>
               When you are sick and don't want to leave home we are here to
               offer affordable and convenient phone and video consultation to
               take care of your medical needs !
-            </h6>
+            </h5>
+            <br />
             <h4>What are the benefits of telehealth ?</h4>
+            <br />
             <ul>
-              <li>Fast access to urgent care needs</li>
-              <li>No driving to a doctor's office or urgent care</li>
-              <li>Easy to fit in to your busy schedule</li>
-              <li>Prescription provided when needed</li>
-              <li>Minimal waiting time spent</li>
+              <li>🚅 Fast access to urgent care needs</li>
+              <br />
+              <li>🏠 No driving to a doctor's office or urgent care</li>
+              <br />
+              <li> 📃 Easy to fit in to your busy schedule</li>
+              <br />
+              <li>🩺 Prescription provided when needed</li>
+              <br />
+              <li>⌚ Minimal waiting time spent</li>
+              <br />
               <li>
-                Receive medical advice and patient education from the comfort of
-                your own bed / sofa
+                👨‍🏫 Receive medical advice and patient education from the comfort
+                of your own bed/sofa
               </li>
             </ul>
           </div>
