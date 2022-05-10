@@ -7,7 +7,7 @@ export default function OurServices() {
     <div className="ourservices">
       <div className="row ourserviceImage">
         <div
-          className="col col-md-6 col-sm-12 col-xs-12 serviceImage"
+          className="col col-md-6 col-sm-12 col-xs-12 serviceImage divAlignCenter"
           data-aos="fade-in"
         >
           <img src={TeleMedservices} alt="services" style={{ width: "100%" }} />
@@ -23,7 +23,7 @@ export default function OurServices() {
           </p>
         </div>
         <div
-          className="col col-md-6 col-sm-12 col-xs-12 serviceList"
+          className="col col-md-6 col-sm-12 col-xs-12 serviceList divAlignCenter "
           data-aos="fade-in"
         >
           <h5>

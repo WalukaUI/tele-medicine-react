@@ -8,28 +8,32 @@ export default function GetAppointment() {
       <div className="howtogetAppointment">
         <h4 data-aos="fade-in">How to get an appointment ? </h4>
         <div className="row howtogetapp">
-          <div className="col col-md-6 col-sm-12 mx-auto" data-aos="fade-up">
+          <div
+            className="col col-md-6 col-sm-12 mx-auto divAlignCenter"
+            data-aos="fade-up"
+          >
             <img src={GetAppImage} alt="howtogetappointment" />
           </div>
           <div
-            className="col col-md-6 col-sm-12mx-auto howToGetAppList"
+            className="col col-md-6 col-sm-12mx-auto howToGetAppList divAlignCenter"
             data-aos="fade-up"
           >
             <ul>
-              <h5>Our criteria</h5>
+              <h4>Our criteria</h4>
               <br />
               <li>
                 Do not provide controlled substance prescriptions under any
                 circumstance
               </li>
               <li>
-                Patient care is provided to Missouri residents, except during
-                the pandemic we can take care of urgent care needs
+                Patient care is provided to{" "}
+                <span style={{ color: "green" }}>Missouri residents</span>,
+                except during the pandemic we can take care of urgent care needs
               </li>
               <li>We take care of patients above 3 years of age</li>
               <li>
-                Adults with fever of less than 105 F and children with fever
-                less than 103
+                Adults with fever of less than <span>105 F</span> and children
+                with fever less than <span>103 F</span>
               </li>
             </ul>
           </div>
@@ -37,10 +41,10 @@ export default function GetAppointment() {
         <br />
         <div className="row howtogetapp">
           <div
-            className="col col-md-6 col-sm-12 mx-auto howToGetAppList"
+            className="col col-md-6 col-sm-12 mx-auto howToGetAppList divAlignCenter"
             data-aos="fade-up"
           >
-            <h5>To schedule an appointment follow the 3 steps:</h5>
+            <h4>To schedule an appointment follow the 3 steps:</h4>
             <br />
             <ul>
               <li>

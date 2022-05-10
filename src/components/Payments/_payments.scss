@@ -5,6 +5,7 @@
   background-image: url(../../../public/images/payments.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: x-large;
   padding: 50px;
   img {
     width: 70%;
@@ -15,4 +16,10 @@
   .paymentsImage {
     flex-direction: column;
   }
+}
+.divAlignCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

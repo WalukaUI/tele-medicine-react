@@ -28,7 +28,7 @@ export default function TeleMed() {
             </p>
           </div>
           <div
-            className="col col-md-6 col-sm-12mx-auto teleMedList"
+            className="col col-md-6 col-sm-12mx-auto teleMedList divAlignCenter "
             data-aos="fade-in"
           >
             <h5 style={{ lineHeight: "2rem" }}>

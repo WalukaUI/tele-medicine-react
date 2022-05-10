@@ -6,7 +6,10 @@ export default function Payments() {
     <>
       <div className="payments">
         <div className="row paymentsImage">
-          <div className="col col-md-6 col-sm-12 mx-auto" data-aos="fade-in">
+          <div
+            className="col col-md-6 col-sm-12 mx-auto divAlignCenter"
+            data-aos="fade-in"
+          >
             <img src={PaymentCare} alt="care" />
             <p style={{ fontSize: "7px" }}>
               Photo by{" "}
@@ -16,13 +19,21 @@ export default function Payments() {
               from Pexels
             </p>
           </div>
-          <div className="col col-md-6 col-sm-12mx-auto" data-aos="fade-in">
+          <div
+            className="col col-md-6 col-sm-12mx-auto divAlignCenter"
+            data-aos="fade-in"
+          >
             Now you can have our service as low as $25 onwards per session.
             <br />
             <br />
-            <h6>
+            <h5>
               We accept CashApp, Zelle and Debit/ credit card payment methords.
-            </h6>
+            </h5>
+            <img
+              src="https://www.merchantequip.com/image/?logos=v|m|a|d&height=64"
+              alt="Credit Card Logos"
+              style={{ width: "400px", height: "100px" }}
+            />
           </div>
         </div>
         <div className="attribute">

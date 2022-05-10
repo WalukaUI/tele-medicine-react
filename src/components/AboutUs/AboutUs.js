@@ -5,7 +5,10 @@ export default function AboutUs() {
     <>
       <div className="aboutUs">
         <div className="row aboutUsImage">
-          <div className="col col-md-6 col-sm-12 mx-auto" data-aos="fade-in">
+          <div
+            className="col col-md-6 col-sm-12 mx-auto divAlignCenter"
+            data-aos="fade-in"
+          >
             <img src={Free} alt="care" />
             {/* <p style={{ fontSize: "7px" }}>
               Photo by{" "}
@@ -15,14 +18,15 @@ export default function AboutUs() {
               from Pexels
             </p> */}
           </div>
-          <div className="col col-md-6 col-sm-12mx-auto" data-aos="fade-in">
+          <div
+            className="col col-md-6 col-sm-12mx-auto divAlignCenter"
+            data-aos="fade-in"
+          >
             <br />
             <br />
-            <h5>
-              When you are sick and don't want to leave home we are here to
-              offer affordable and convenient phone and video consultation to
-              take care of your medical needs !
-            </h5>
+            When you are sick and don't want to leave home we are here to offer
+            affordable and convenient phone and video consultation to take care
+            of your medical needs !
           </div>
         </div>
         <div className="attribute">
