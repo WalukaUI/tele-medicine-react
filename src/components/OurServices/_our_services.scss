@@ -12,6 +12,15 @@
   }
 }
 .serviceList {
+  position: relative;
+  img {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+  }
   li::marker {
     content: "  >>      ";
     color: red;

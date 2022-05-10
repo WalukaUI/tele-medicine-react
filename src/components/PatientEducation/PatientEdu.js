@@ -5,8 +5,11 @@ export default function PatientEdu() {
     <>
       <div className="patientEdu">
         <div className="row patientEduImage">
-          <div className="col col-md-6 col-sm-12 mx-auto" data-aos="fade-in">
-            {/* <img src={PaymentCare} alt="care" /> */}
+          <div
+            className="col col-md-6 col-sm-12 mx-auto divAlignCenter"
+            data-aos="fade-in"
+          >
+            <img src="/DocPngs/namecard.png" alt="care" />
             {/* <p style={{ fontSize: "7px" }}>
               Photo by{" "}
               <a href="https://www.pexels.com/photo/man-in-white-shirt-and-man-in-black-shirt-7551686/">
@@ -15,10 +18,13 @@ export default function PatientEdu() {
               from Pexels
             </p> */}
           </div>
-          <div className="col col-md-6 col-sm-12mx-auto" data-aos="fade-in">
+          <div
+            className="col col-md-6 col-sm-12mx-auto divAlignCenter"
+            data-aos="fade-in"
+          >
             <br />
             <br />
-            <h6>Patient education</h6>
+            <h4>Patient education</h4>
           </div>
         </div>
         <div className="attribute">

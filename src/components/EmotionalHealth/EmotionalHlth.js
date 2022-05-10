@@ -18,8 +18,11 @@ export default function EmotionalHealth() {
               from Pexels
             </p>
           </div>
-          <div className="col col-md-6 col-sm-12mx-auto" data-aos="fade-up">
-            You are neaver alone, We are here to help you.
+          <div
+            className="col col-md-6 col-sm-12mx-auto divAlignCenter"
+            data-aos="fade-up"
+          >
+            <h4>You are neaver alone, We are here to help you.</h4>
             <br />
           </div>
         </div>
